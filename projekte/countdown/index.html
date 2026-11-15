@@ -1,0 +1,2421 @@
+<!doctype html><html lang="de"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><title>Split-Flap Countdown · Two Diamonds Studio</title><meta name="description" content="Ein Countdown im Stil einer Bahnhofs-Anzeigetafel."><link rel="canonical" href="https://twodiamondsstudio.com/projekte/countdown/"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<style>
+@font-face{font-family:'Rajdhani';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/rajdhani-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Rajdhani';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/rajdhani-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Rajdhani';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/rajdhani-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Rajdhani';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/rajdhani-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Rajdhani';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/rajdhani-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Rajdhani';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/rajdhani-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/ibm-plex-sans-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/ibm-plex-sans-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/ibm-plex-sans-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/ibm-plex-sans-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/ibm-plex-sans-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/ibm-plex-sans-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/playfair-display-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/playfair-display-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/playfair-display-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/playfair-display-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Caveat';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/caveat-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Caveat';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/caveat-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Caveat';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/caveat-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Caveat';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/caveat-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Bebas Neue';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/bebas-neue-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Bebas Neue';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/bebas-neue-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
+
+<style>
+  /* This page commits to a single fixed light look on purpose (explicit request: background
+     stays pure white always, regardless of the viewer's system theme — no dark-mode variant). */
+  :root{
+    --bg:#ffffff;
+    --surface-2:#f0ece3;
+    --text:#211d18;
+    --text-muted:#948c7c;
+    --border:#ddd5c3;
+    --accent:#d8303c;
+    --accent-contrast:#fff8f2;
+  }
+
+  *{ box-sizing:border-box; }
+  /* ---------- fixed-viewport shell: the app fills exactly 100vh/100vw and never scrolls as a
+     whole — nothing may push html/body/.app taller or wider than the viewport. The sidebar gets
+     its own internal scroll (see .sidebar below) if its controls don't fit; the main stage clips
+     any residual overflow as a hard safety net, though in normal use the digit display's own
+     auto-fit (see computeMaxFitScale()/updateScaleCeiling() in the script) keeps it from ever
+     needing to. */
+  html{ height:100%; overflow:hidden; }
+  body{
+    height:100%;
+    margin:0;
+    overflow:hidden;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .app{
+    display:flex;
+    height:100vh;
+    overflow:hidden;
+  }
+
+  .sidebar-toggle{
+    position:fixed;
+    top:1rem;
+    left:1rem;
+    z-index:30;
+    width:30px;
+    height:30px;
+    border-radius:8px;
+    border:1px solid var(--border);
+    background:var(--bg);
+    color:var(--text-muted);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:.85rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:color .15s ease, border-color .15s ease;
+  }
+  .sidebar-toggle:hover{ color:var(--accent); border-color:var(--accent); }
+  .sidebar-toggle:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+
+  @media (max-width:480px){
+    .sidebar{ width:210px; flex-basis:210px; }
+  }
+
+  /* ---------- sidebar ---------- */
+  .sidebar{
+    width:240px;
+    flex:0 0 240px;
+    /* min-height:0 overrides the flex-item default (min-height:auto, which factors in content's
+       own intrinsic size and would otherwise let a tall sidebar stretch .app taller than 100vh);
+       with it forced to 0, the sidebar is held to exactly .app's height via the default
+       align-items:stretch, and overflow-y:auto scrolls INSIDE it instead — the main stage never
+       has to shrink or scroll to make room for a long settings panel. */
+    min-height:0;
+    /* Bug fixed — controls and values (e.g. the scale-slider's "64%"/"71%" readouts) sat flush
+       against the sidebar's right edge, sometimes visually clipped in a narrow browser chrome —
+       a real bug the user hit (screenshot showed digits cut off at the edge). Widened the
+       left/right padding from 1.25rem to 1.5rem and widened the sidebar itself from 220px to
+       240px (rather than padding alone, which would have squeezed the already-tight row content
+       further) so sliders and their value readouts have comfortable room to sit side by side. */
+    padding:3.25rem 1.5rem 1.5rem;
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+    border-right:1px solid var(--border);
+    overflow-y:auto;
+    overflow-x:hidden;
+    transition:width .25s ease, padding .25s ease, opacity .2s ease, border-color .25s ease;
+  }
+  .app.collapsed .sidebar{
+    width:0;
+    flex-basis:0;
+    padding-left:0;
+    padding-right:0;
+    opacity:0;
+    border-right-color:transparent;
+    pointer-events:none;
+  }
+  .brand{ margin:0; }
+  .brand-eyebrow{
+    display:block;
+    font-family:'Rajdhani', sans-serif;
+    font-weight:600;
+    font-size:.62rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+  }
+  .brand-name{
+    display:block;
+    font-family:'Rajdhani', sans-serif;
+    font-weight:700;
+    font-size:.95rem;
+    color:var(--text-muted);
+    letter-spacing:.02em;
+  }
+
+  .lock-row{ display:flex; align-items:center; gap:.5rem; }
+  .lock-toggle{
+    width:28px;
+    height:28px;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:7px;
+    border:1px solid var(--border);
+    background:var(--bg);
+    color:var(--text-muted);
+    cursor:pointer;
+    transition:color .15s ease, border-color .15s ease;
+  }
+  .lock-toggle:hover{ color:var(--accent); border-color:var(--accent); }
+  .lock-toggle:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+  .lock-icon{ position:relative; width:13px; height:15px; }
+  .lock-shackle{
+    position:absolute;
+    left:1.5px;
+    top:0;
+    width:10px;
+    height:8px;
+    box-sizing:border-box;
+    border:2px solid currentColor;
+    border-bottom:none;
+    border-radius:6px 6px 0 0;
+    transform-origin:left bottom;
+    transition:transform .18s ease;
+  }
+  .lock-body{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:13px;
+    height:8px;
+    border-radius:2px;
+    background:currentColor;
+  }
+  .lock-toggle[aria-pressed="false"] .lock-shackle{
+    transform:translateX(4px) rotate(-30deg);
+  }
+  .lock-label{
+    font-family:'Rajdhani', sans-serif;
+    font-weight:600;
+    font-size:.68rem;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+  }
+
+  .tab-list{ display:flex; flex-direction:column; gap:.15rem; }
+  .tab-item{
+    display:flex;
+    align-items:center;
+    gap:.35rem;
+    padding:.4rem .5rem;
+    border-radius:6px;
+    cursor:pointer;
+  }
+  .tab-item:hover{ background:var(--surface-2); }
+  .tab-item.active{ background:var(--surface-2); }
+  .tab-main{ display:flex; flex-direction:column; gap:.05rem; min-width:0; flex:1; }
+  .tab-title-input{
+    font-family:'IBM Plex Sans', sans-serif;
+    font-weight:600;
+    font-size:.76rem;
+    color:var(--text-muted);
+    background:transparent;
+    border:none;
+    outline:none;
+    padding:0;
+    width:100%;
+    text-overflow:ellipsis;
+  }
+  .tab-title-input::placeholder{ color:var(--text-muted); opacity:.55; font-weight:400; }
+  .tab-title-input:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; border-radius:3px; }
+  .tab-item.active .tab-title-input{ color:var(--accent); }
+  .tab-date{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:.63rem;
+    color:var(--text-muted);
+    opacity:.7;
+  }
+  .tab-item.active .tab-date{ color:var(--accent); opacity:.85; }
+  .tab-remove{
+    background:none; border:none; color:var(--text-muted); opacity:.45;
+    font-size:.85rem; line-height:1; cursor:pointer; padding:0 .15rem;
+    font-family:inherit;
+    flex-shrink:0;
+  }
+  .tab-remove:hover{ opacity:1; }
+
+  .add-form{
+    display:flex;
+    flex-direction:column;
+    gap:.55rem;
+    padding-top:1.1rem;
+    border-top:1px solid var(--border);
+  }
+  .mini-label{
+    margin:0;
+    font-family:'Rajdhani', sans-serif;
+    font-weight:600;
+    font-size:.66rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+  }
+  .mini-input{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:.76rem;
+    color:var(--text-muted);
+    background:transparent;
+    border:1px solid var(--border);
+    border-radius:6px;
+    padding:.4rem .5rem;
+    width:100%;
+    transition:border-color .2s ease;
+  }
+  .mini-input:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; color:var(--text); }
+  .mini-input.invalid{ border-color:var(--accent); }
+  .mini-input::-webkit-calendar-picker-indicator{ opacity:.5; cursor:pointer; }
+
+  .mini-units{ display:flex; gap:.3rem; flex-wrap:wrap; }
+  .mini-chip{
+    font-family:'Rajdhani', sans-serif;
+    font-weight:600;
+    font-size:.64rem;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    padding:.28rem .5rem;
+    border-radius:5px;
+    border:1px solid var(--border);
+    background:transparent;
+    color:var(--text-muted);
+    cursor:pointer;
+    transition:border-color .15s ease, color .15s ease, background .15s ease;
+  }
+  .mini-chip:hover{ color:var(--text); }
+  .mini-chip:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+  .mini-chip.active{ border-color:var(--accent); color:var(--accent); }
+  .mini-chip.warn{ background:var(--accent); border-color:var(--accent); color:var(--accent-contrast); }
+
+  .add-btn{
+    align-self:flex-start;
+    font-family:'Rajdhani', sans-serif;
+    font-weight:700;
+    font-size:.72rem;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+    background:transparent;
+    border:1px dashed var(--border);
+    border-radius:6px;
+    padding:.4rem .8rem;
+    cursor:pointer;
+    transition:border-color .15s ease, color .15s ease;
+  }
+  .add-btn:hover{ border-color:var(--accent); color:var(--accent); }
+  .add-btn:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+
+  .mini-input:disabled, .mini-chip:disabled,
+  .tab-title-input:disabled, .tab-remove:disabled, .add-btn:disabled,
+  .tb-color:disabled, .tb-btn:disabled, .tb-size-slider:disabled, .scale-slider:disabled,
+  .tf-checkbox input:disabled{
+    opacity:.4;
+    cursor:not-allowed;
+    pointer-events:none;
+  }
+  .tf-checkbox:has(input:disabled){ cursor:not-allowed; }
+
+  .segment-color-control{
+    display:flex;
+    flex-direction:column;
+    gap:.55rem;
+    padding-top:1.1rem;
+    border-top:1px solid var(--border);
+  }
+
+  .image-control{
+    display:flex;
+    flex-direction:column;
+    gap:.55rem;
+    padding-top:1.1rem;
+    border-top:1px solid var(--border);
+  }
+
+  .title-format{
+    display:flex;
+    flex-direction:column;
+    gap:.55rem;
+    padding-top:1.1rem;
+    border-top:1px solid var(--border);
+  }
+  .tf-row{ display:flex; align-items:center; gap:.4rem; }
+  /* Bug fixed — "Bild hochladen" + "Entfernen" together are wider than the sidebar's available
+     content width at any reasonable sidebar size, so the two buttons overflowed past the sidebar's
+     right edge instead of wrapping (a real, Playwright-caught regression while widening the
+     sidebar for the padding fix above — this row was already overflowing before that fix too, just
+     by a larger margin). flex-wrap is scoped to this one row (not all of `.tf-row`, which is also
+     used for label+slider pairs elsewhere that are fine staying on one line) so "Entfernen" simply
+     drops to its own line when there isn't room beside "Bild hochladen", rather than clipping. */
+  .image-action-row{ flex-wrap:wrap; }
+  .tf-row[hidden]{ display:none; } /* .tf-row's own display:flex would otherwise beat the UA [hidden] default */
+  .tf-checkbox{
+    display:flex;
+    align-items:center;
+    gap:.45rem;
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:.72rem;
+    color:var(--text-muted);
+    cursor:pointer;
+  }
+  .tf-checkbox input{ accent-color:var(--accent); cursor:pointer; }
+
+  .scale-control{
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+    padding-top:1.1rem;
+    border-top:1px solid var(--border);
+  }
+  .scale-row{ display:flex; align-items:center; gap:.55rem; }
+  .scale-slider{
+    flex:1;
+    accent-color:var(--accent);
+    cursor:pointer;
+    background:transparent;
+  }
+  .scale-slider:focus-visible{ outline:2px solid var(--accent); outline-offset:1px; }
+  .scale-value{
+    min-width:38px;
+    text-align:right;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:.72rem;
+    color:var(--text-muted);
+    flex-shrink:0;
+  }
+
+  .sidebar-note{
+    margin:auto 0 0;
+    font-size:.66rem;
+    color:var(--text-muted);
+    opacity:.65;
+    line-height:1.4;
+  }
+
+  /* ---------- stage ---------- */
+  .stage{
+    flex:1;
+    min-width:0;
+    min-height:0; /* same flex-stretch override as .sidebar above — .stage is held to exactly
+      .app's height regardless of its content's natural size */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:2.5rem 1.25rem;
+    height:100%;
+    overflow:hidden; /* hard safety net — see the fixed-viewport-shell comment above */
+  }
+  .empty-state{
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:.92rem;
+    color:var(--text-muted);
+  }
+
+  /* the optional per-countdown image now lives INSIDE #countdown-area (unlike its first version,
+     which was a plain fixed banner stacked above the area by .stage's own flexbox) so it can be
+     freely dragged anywhere in the same coordinate space as the title, including on top of the
+     numbers — see "Countdown image" in the script and CLAUDE.md for the drag mechanics and why
+     it also tracks the digits' own vertical-drag offset. --image-scale is set from JS by the
+     sidebar's size slider (0.4–2, default 1); the base size is a responsive clamp() like the
+     digits' own sizing, so it's "angemessen" (reasonable) on any viewport before the user adjusts
+     it further. */
+  .image-wrap{
+    /* shrink-wraps to the image's own rendered size (no width set) so the drag handle above it
+       (a child, for the same hover-bubbling reason as #digits-handle) stays anchored right at the
+       image's own edge regardless of size/scale. z-index:1 paints it above the in-flow digits;
+       it's placed before .title-zone in the DOM (also z-index:1) so an overlapping title wins the
+       tie and stays on top of the image, never the other way around. */
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:1;
+  }
+  .image-wrap[hidden]{ display:none; }
+  .image-wrap.dragging{ cursor:grabbing; }
+  .image-handle{
+    position:absolute;
+    top:-16px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:2;
+    width:26px;
+    height:26px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--bg);
+    border:1px solid var(--border);
+    border-radius:5px;
+    color:var(--text-muted);
+    cursor:grab;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .15s ease, border-color .15s ease, color .15s ease;
+  }
+  .image-handle:hover{ border-color:var(--accent); color:var(--accent); }
+  .image-wrap:hover .image-handle,
+  .image-wrap.dragging .image-handle{
+    opacity:1;
+    pointer-events:auto;
+  }
+  .app.locked .image-handle{ display:none; } /* same reasoning as .app.locked .digits-handle —
+    the handle isn't nested inside a separately-hoverable overlay, so hiding it is enough on its
+    own; no residual hover/cursor affordance can appear on the image itself either, since dragging
+    is only ever initiated from this handle, never from the image itself */
+  .countdown-image{
+    display:block;
+    width:calc(var(--image-scale, 1) * clamp(140px, 32vw, 420px));
+    max-width:100%;
+    height:auto;
+    border-radius:10px;
+    -webkit-user-drag:none; /* the drag handle drives all movement — don't let the browser's own
+      native image-drag-ghost interfere */
+    user-select:none;
+  }
+
+  /* the whole countdown display: digits centered in normal flow, the image and title both
+     free-floating on top of it anywhere within this box (over the numbers, beside them, below
+     them — anywhere). The padding is the room available beside/above/below the numbers themselves
+     for "next to" placement — it scales with viewport width so there's always some, without
+     turning into the whole page. The area sits fixed in the center of .stage (flexbox); only the
+     image's and the title's own positions within it are free-floating — each is a fraction of
+     THIS box (see "Vertical digit drag" for the one exception: dragging the numbers moves only
+     them horizontally-fixed/vertically-free, and the image additionally tracks that offset). */
+  .countdown-area{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /* The lower bound of each clamp() used to be a fixed 90px/60px floor that never shrank
+       further, which was fine back when the page could grow/scroll to fit its content. Now that
+       nothing may scroll (see the fixed-viewport shell below), that floor became a hard trap on
+       very narrow windows: once the sidebar's fixed width left less horizontal room for .stage
+       than the 60px+60px minimum padding alone required, there was *negative* space left for the
+       digits no matter how far the auto-fit (computeMaxFitScale(), see further down) shrank them
+       — they'd collapse to a reported width of 0 instead of ever becoming visible. Dropping the
+       floor to 12px/16px keeps the padding identical at every normal (>~560px-wide) window size,
+       since the vw term still dominates there, and only softens it in that narrow-window edge
+       case so real content space always remains for the auto-fit to shrink the digits into. */
+    padding:clamp(16px, 16vw, 220px) clamp(12px, 14vw, 260px);
+    max-width:100%;
+    box-sizing:border-box;
+  }
+
+  /* ---------- lock mode: "gesperrt" = pure display. Nothing can be moved, edited, formatted or
+     even selected, and no hover affordance of any kind appears on the title or the countdown —
+     no drag handle, no toolbar bubble, no cursor change. Sidebar editing controls are grayed out
+     via the :disabled rules above and applySidebarLockState()/syncFormToActiveTab() in the
+     script, which run whenever the lock toggles. */
+  .app.locked .tb-handle{ display:none; }
+  .app.locked .title-toolbar{ display:none; }
+  .app.locked .tf-align{
+    opacity:.4;
+    cursor:not-allowed;
+    pointer-events:none;
+  }
+  .app.locked .title-zone,
+  .app.locked .title-zone *{
+    pointer-events:none !important;
+  }
+  .app.locked .countdown-title{
+    cursor:default;
+    user-select:none;
+    -webkit-user-select:none;
+  }
+  .title-zone{
+    /* a full overlay spanning the whole countdown area — this is the title's entire coordinate
+       space and drag range now, not just a strip above the numbers. It doesn't intercept clicks
+       itself (pointer-events:none) so the digits underneath stay reachable; only the title text
+       and its drag handle (pointer-events:auto) do. Being positioned, it paints above the
+       in-flow .digit-groups automatically, so an overlapping title is always visible in front. */
+    position:absolute;
+    inset:0;
+    z-index:1;
+    pointer-events:none;
+  }
+  .title-zone[hidden]{ display:none; }
+  .title-zone.dragging{ cursor:grabbing; }
+
+  .title-toolbar{
+    /* positioned in JS to hover just above the title's current spot, wherever that is */
+    position:absolute;
+    z-index:2;
+    display:flex;
+    align-items:center;
+    gap:.3rem;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:.3rem .45rem;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .15s ease;
+  }
+  .title-zone:hover .title-toolbar,
+  .title-zone.toolbar-open .title-toolbar{
+    opacity:1;
+    pointer-events:auto;
+  }
+  .tb-handle{
+    width:26px;
+    height:26px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--bg);
+    border:1px solid var(--border);
+    border-radius:5px;
+    color:var(--text-muted);
+    cursor:grab;
+    flex-shrink:0;
+  }
+  .tb-handle:hover{ border-color:var(--accent); color:var(--accent); }
+  .tb-handle-icon{ display:grid; grid-template-columns:repeat(3,3px); gap:2px; }
+  .tb-handle-icon span{ width:3px; height:3px; border-radius:50%; background:currentColor; }
+  .tb-size-slider{
+    flex:1;
+    accent-color:var(--accent);
+    cursor:pointer;
+    background:transparent;
+  }
+  .tb-size-slider:focus-visible{ outline:2px solid var(--accent); outline-offset:1px; }
+  .tb-size-value{
+    min-width:26px;
+    text-align:right;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:.68rem;
+    color:var(--text-muted);
+    flex-shrink:0;
+  }
+  .tb-color{
+    width:26px;
+    height:26px;
+    padding:2px;
+    border:1px solid var(--border);
+    border-radius:5px;
+    background:var(--bg);
+    cursor:pointer;
+  }
+  .tb-color::-webkit-color-swatch{ border:none; border-radius:3px; }
+  .tb-color::-moz-color-swatch{ border:none; border-radius:3px; }
+  .tb-btn{
+    width:26px;
+    height:26px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Rajdhani', sans-serif;
+    font-weight:700;
+    font-size:.78rem;
+    color:var(--text-muted);
+    background:var(--bg);
+    border:1px solid var(--border);
+    border-radius:5px;
+    cursor:pointer;
+    transition:border-color .15s ease, color .15s ease, background .15s ease;
+  }
+  .tb-btn:hover{ border-color:var(--accent); color:var(--accent); }
+  .tb-btn.active{ background:var(--accent); border-color:var(--accent); color:var(--accent-contrast); }
+  .tb-btn:focus-visible{ outline:2px solid var(--accent); outline-offset:1px; }
+  .tb-sep{ width:1px; align-self:stretch; background:var(--border); margin:0 .1rem; }
+  .tb-align-icon{ display:flex; flex-direction:column; gap:2px; width:14px; }
+  .tb-align-icon.align-left{ align-items:flex-start; }
+  .tb-align-icon.align-center{ align-items:center; }
+  .tb-align-icon.align-right{ align-items:flex-end; }
+  .tb-align-icon span{ display:block; height:2px; border-radius:1px; background:currentColor; }
+  .tb-align-icon span:nth-child(1){ width:100%; }
+  .tb-align-icon span:nth-child(2){ width:65%; }
+  .tb-align-icon span:nth-child(3){ width:82%; }
+
+  .countdown-title{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:1;
+    max-width:100%;
+    margin:0;
+    font-family:'Rajdhani', sans-serif;
+    font-weight:600;
+    font-size:clamp(1.75rem, 4.5vw, 3.25rem);
+    letter-spacing:-.01em;
+    color:var(--text);
+    white-space:pre-wrap;
+    outline:none;
+    cursor:text;
+    pointer-events:auto;
+  }
+  .countdown-title span{ font:inherit; color:inherit; }
+
+  .digit-groups{
+    /* --scale is the user's fine-tuning slider (default 1); the clamp()s underneath it already
+       auto-fit the viewport width, so scaling on top of them still never outgrows the screen
+       in normal use — .digit-groups wraps its unit-groups onto a new row rather than overflow.
+       --seg-color is the per-countdown segment color (defaults to a light red, set from JS).
+       position:relative anchors #digits-handle; the vertical drag itself is a JS-set
+       translateY() transform on this element, which doesn't affect layout/flow of anything
+       around it (see "Vertical digit drag" in the script and CLAUDE.md). */
+    position:relative;
+    --scale:1;
+    --seg-color:#ef4a52;
+    --digit-w:calc(var(--scale) * clamp(66px, 13.5vw, 174px));
+    --digit-h:calc(var(--digit-w) * 1.6667);
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    gap:calc(var(--scale) * clamp(40px, 9vw, 96px));
+    flex-wrap:wrap;
+    max-width:100%;
+  }
+  .digits-handle{
+    position:absolute;
+    top:-16px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:2;
+    width:26px;
+    height:26px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--bg);
+    border:1px solid var(--border);
+    border-radius:5px;
+    color:var(--text-muted);
+    cursor:ns-resize; /* hints vertical-only movement, unlike the title handle's cursor:grab */
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .15s ease, border-color .15s ease, color .15s ease;
+  }
+  .digits-handle:hover{ border-color:var(--accent); color:var(--accent); }
+  .digit-groups:hover .digits-handle,
+  .digit-groups.digits-dragging .digits-handle{
+    opacity:1;
+    pointer-events:auto;
+  }
+  .app.locked .digits-handle{ display:none; } /* display:none alone is enough here — unlike the
+    title's toolbar bubble, this handle isn't nested inside a separately-hoverable overlay, so
+    there's no residual hover surface left once it's hidden */
+  .unit-group{ display:flex; flex-direction:column; align-items:center; gap:.9rem; }
+  .digits{ display:flex; gap:calc(var(--scale) * clamp(3px, .9vw, 12px)); }
+  .unit-label{
+    font-family:'Rajdhani', sans-serif;
+    font-weight:600;
+    font-size:calc(var(--scale) * clamp(.9rem, 1.575vw, 1.11rem));
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+  }
+
+  .digit-cell{
+    position:relative;
+    width:var(--digit-w);
+    height:var(--digit-h);
+    perspective:480px;
+  }
+  .digit-cell svg{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    display:block;
+    overflow:visible;
+  }
+
+  .seg{
+    fill:var(--seg-color);
+    stroke:#000;
+    stroke-width:2;
+    stroke-linejoin:round;
+    vector-effect:non-scaling-stroke; /* keeps the outline ~2px on screen at any digit size */
+    opacity:0;
+    transform:rotateX(90deg);
+    transform-box:fill-box;
+    transform-origin:50% 50%;
+    transition:transform .2s cubic-bezier(.5,0,.25,1), opacity .2s linear;
+  }
+
+  /* per-countdown "Glow" toggle — a soft light-bleed in the configured segment color around each
+     lit segment; only .seg elements currently toggled on (paint()'s 'on' class) get it, so unlit
+     segments (already opacity:0) never do. Off by default, matching the app's original look. */
+  .digit-groups.glow-on .seg.on{
+    filter:
+      drop-shadow(0 0 6px var(--seg-color))
+      drop-shadow(0 0 16px var(--seg-color));
+  }
+  /* the segment outline switches with the glow toggle — white while glowing, black otherwise.
+     Thickness/style (stroke-width, stroke-linejoin) are untouched, only the color changes. */
+  .digit-groups.glow-on .seg{ stroke:#fff; }
+</style>
+
+<button type="button" id="sidebar-toggle" class="sidebar-toggle" aria-label="Seitenleiste umschalten" aria-expanded="true">‹</button>
+
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <p class="brand">
+      <span class="brand-eyebrow">Split-Flap</span>
+      <span class="brand-name">Countdown</span>
+    </p>
+
+    <div class="lock-row">
+      <button type="button" class="lock-toggle" id="lock-toggle" aria-pressed="false" aria-label="Bearbeitung sperren">
+        <span class="lock-icon" aria-hidden="true"><span class="lock-shackle"></span><span class="lock-body"></span></span>
+      </button>
+      <span class="lock-label" id="lock-label">Entsperrt</span>
+    </div>
+
+    <div class="tab-list" id="tab-list"></div>
+
+    <button type="button" class="add-btn" id="add-btn">+ Neuer Countdown</button>
+
+    <div class="add-form">
+      <p class="mini-label">Zeitpunkt</p>
+      <!-- split into separate date/time fields (was one <input type="datetime-local">) — the
+           combined control needed more width than the sidebar has to spare to show a full
+           "DD.MM.YYYY, HH:mm" without clipping the minutes; two full-width rows each only need to
+           fit their own half, with plenty of room to spare. See CLAUDE.md, "Zeitpunkt controls". -->
+      <input type="date" id="target-date-input" class="mini-input" aria-label="Datum">
+      <input type="time" id="target-time-input" class="mini-input" aria-label="Uhrzeit">
+      <div class="mini-units" id="mini-units">
+        <button type="button" class="mini-chip" data-unit="d">Tage</button>
+        <button type="button" class="mini-chip" data-unit="h">Std</button>
+        <button type="button" class="mini-chip" data-unit="m">Min</button>
+        <button type="button" class="mini-chip" data-unit="s">Sek</button>
+      </div>
+    </div>
+
+    <div class="segment-color-control">
+      <p class="mini-label">Segmentfarbe</p>
+      <div class="tf-row">
+        <input type="color" class="tb-color" id="segment-color" value="#ef4a52" aria-label="Farbe der Zahlensegmente">
+      </div>
+      <label class="tf-checkbox">
+        <input type="checkbox" id="glow-toggle">
+        Glow (Leuchteffekt)
+      </label>
+    </div>
+
+    <div class="image-control" id="image-control">
+      <p class="mini-label">Bild</p>
+      <div class="tf-row image-action-row">
+        <input type="file" id="image-upload" accept="image/*" hidden>
+        <button type="button" class="add-btn" id="image-upload-btn">Bild hochladen</button>
+        <button type="button" class="add-btn" id="image-remove-btn" disabled>Entfernen</button>
+      </div>
+      <div class="tf-row" id="image-scale-row" hidden>
+        <input type="range" class="scale-slider" id="image-scale-slider" min="0.4" max="2" step="0.01" value="1" aria-label="Größe des Bildes">
+        <span class="scale-value" id="image-scale-value">100%</span>
+      </div>
+    </div>
+
+    <div class="title-format" id="title-format">
+      <p class="mini-label">Überschrift</p>
+      <label class="tf-checkbox">
+        <input type="checkbox" id="tf-visible" checked>
+        Überschrift anzeigen
+      </label>
+      <div class="tf-row">
+        <input type="range" class="tb-size-slider" id="tf-size" min="12" max="220" step="1" value="32" aria-label="Schriftgröße der Überschrift">
+        <span class="tb-size-value" id="tf-size-value">32</span>
+      </div>
+      <div class="tf-row">
+        <select class="mini-input" id="tf-font" aria-label="Schriftart der Überschrift">
+          <option value="">Standard (serifenlos)</option>
+          <option value="serif">Serif</option>
+          <option value="monospace">Monospace</option>
+          <option value="handwriting">Handschrift</option>
+          <option value="display">Dekorativ</option>
+        </select>
+      </div>
+      <div class="tf-row">
+        <input type="color" class="tb-color" id="tf-color" value="#000000" aria-label="Schriftfarbe der Überschrift">
+        <button type="button" class="tb-btn" id="tf-bold" aria-label="Fett" aria-pressed="false"><strong>B</strong></button>
+        <button type="button" class="tb-btn" id="tf-italic" aria-label="Kursiv" aria-pressed="false"><em>I</em></button>
+        <span class="tb-sep" aria-hidden="true"></span>
+        <button type="button" class="tb-btn tf-align" data-align="left" aria-label="Linksbündig positionieren" aria-pressed="false"><span class="tb-align-icon align-left"><span></span><span></span><span></span></span></button>
+        <button type="button" class="tb-btn tf-align" data-align="center" aria-label="Zentriert positionieren" aria-pressed="false"><span class="tb-align-icon align-center"><span></span><span></span><span></span></span></button>
+        <button type="button" class="tb-btn tf-align" data-align="right" aria-label="Rechtsbündig positionieren" aria-pressed="false"><span class="tb-align-icon align-right"><span></span><span></span><span></span></span></button>
+      </div>
+      <label class="tf-checkbox">
+        <input type="checkbox" id="tf-gradient-enabled">
+        Farbverlauf
+      </label>
+      <div class="tf-row" id="tf-gradient-controls" hidden>
+        <input type="color" class="tb-color" id="tf-gradient-from" value="#d8303c" aria-label="Verlauf Startfarbe">
+        <input type="color" class="tb-color" id="tf-gradient-to" value="#2b6cff" aria-label="Verlauf Endfarbe">
+        <span class="tb-sep" aria-hidden="true"></span>
+        <button type="button" class="tb-btn tf-gradient-dir active" data-dir="horizontal" aria-label="Horizontal (links nach rechts)" aria-pressed="true">→</button>
+        <button type="button" class="tb-btn tf-gradient-dir" data-dir="vertical" aria-label="Vertikal (oben nach unten)" aria-pressed="false">↓</button>
+        <button type="button" class="tb-btn tf-gradient-dir" data-dir="diagonal" aria-label="Diagonal" aria-pressed="false">↘</button>
+      </div>
+    </div>
+
+    <div class="scale-control">
+      <p class="mini-label">Anzeigegröße</p>
+      <div class="scale-row">
+        <input type="range" class="scale-slider" id="scale-slider" min="0.25" max="1.6" step="0.01" value="1" aria-label="Größe der Zahlenanzeige">
+        <span class="scale-value" id="scale-value">100%</span>
+      </div>
+    </div>
+
+    <p class="sidebar-note">Läuft lokal im Browser, basierend auf der Systemzeit dieses Geräts.</p>
+  </aside>
+
+  <main class="stage">
+    <div class="countdown-area" id="countdown-area">
+      <div class="digit-groups" id="digit-groups">
+        <span class="digits-handle" id="digits-handle" title="Nach oben/unten ziehen" aria-hidden="true"><span class="tb-handle-icon"><span></span><span></span><span></span><span></span><span></span><span></span></span></span>
+      </div>
+      <div class="image-wrap" id="image-wrap" hidden>
+        <span class="image-handle" id="image-handle" title="Ziehen zum Verschieben" aria-hidden="true"><span class="tb-handle-icon"><span></span><span></span><span></span><span></span><span></span><span></span></span></span>
+        <img class="countdown-image" id="countdown-image" alt="" draggable="false">
+      </div>
+      <div class="title-zone" id="title-zone" hidden>
+        <div class="title-toolbar" id="title-toolbar">
+          <span class="tb-handle" id="tb-handle" title="Ziehen zum Verschieben" aria-hidden="true"><span class="tb-handle-icon"><span></span><span></span><span></span><span></span><span></span><span></span></span></span>
+        </div>
+        <h2 class="countdown-title" id="countdown-title" contenteditable="true" spellcheck="false"></h2>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  var REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var STAGGER_MS = 32;
+  var SVG_NS = 'http://www.w3.org/2000/svg';
+  var STORAGE_KEY = 'split-flap-countdown/v1';
+  var VALID_UNIT_KEYS = ['d','h','m','s'];
+  /* Bug fixed — MIN_SCALE used to be 0.5, chosen back when it was just the slider's own nominal
+     floor with no relationship to what actually fits. Once the auto-fit ceiling became the
+     slider's own `max` (see "Fixed viewport / no scrolling"), a MIN_SCALE this close to many
+     real-world ceilings (e.g. maxFitScale measured ~0.51 at a common 1280×800 window) collapsed
+     the slider's whole draggable span down to a sliver just a few hundredths wide — smaller than
+     its own 0.01 `step`, which made real mouse dragging register no change at all (a real,
+     user-reported regression: "kein Klicken, kein Ziehen möglich"). Lowered to 0.25 so the floor
+     sits comfortably below every ceiling seen across a wide range of tested window sizes
+     (~0.5–1.6), guaranteeing a wide, smoothly draggable span everywhere except genuinely extreme,
+     very narrow windows (already a documented, accepted edge case — see "Known design decisions").
+     `#scale-slider`'s HTML `min` attribute was updated to match. */
+  var MIN_SCALE = 0.25, MAX_SCALE = 1.6, DEFAULT_SCALE = 1;
+  var DEFAULT_SEG_COLOR = '#ef4a52';
+  var HEX_COLOR_RE = /^#[0-9a-fA-F]{6}$/;
+
+  var UNIT_DEFS = [
+    { key:'d', label:'Tage',     secs:86400 },
+    { key:'h', label:'Stunden',  secs:3600  },
+    { key:'m', label:'Minuten',  secs:60    },
+    { key:'s', label:'Sekunden', secs:1     }
+  ];
+
+  /* currently displayed countdown */
+  var selected = new Set(['d','h','m','s']);
+  var targetDate = null;
+
+  /* all countdowns */
+  var tabs = [];
+  var activeId = null;
+  var nextId = 1;
+
+  /* global display size, applies to all countdowns */
+  var displayScale = DEFAULT_SCALE;
+
+  /* global edit lock — when true, nothing (title or countdown) can be dragged */
+  var locked = false;
+
+  /* ---------- 7-segment geometry (viewBox 0 0 60 100, split exactly at y=50) ---------- */
+  function pts(list){
+    var out = [];
+    for (var i = 0; i < list.length; i += 2) out.push(list[i] + ',' + list[i + 1]);
+    return out.join(' ');
+  }
+  function hsegPts(yc){ return pts([16,yc-5, 44,yc-5, 50,yc, 44,yc+5, 16,yc+5, 10,yc]); }
+  function vsegPts(xc, y1, y2){ return pts([xc-5,y1+8, xc,y1, xc+5,y1+8, xc+5,y2-8, xc,y2, xc-5,y2-8]); }
+
+  var SEG_POINTS = {
+    a: hsegPts(8),
+    g: hsegPts(50),
+    d: hsegPts(92),
+    f: vsegPts(10, 8, 50),
+    b: vsegPts(50, 8, 50),
+    e: vsegPts(10, 50, 92),
+    c: vsegPts(50, 50, 92)
+  };
+  var SEG_ORDER = ['a','b','c','d','e','f','g'];
+  var DIGIT_SEGMENTS = {
+    '0':'abcdef', '1':'bc', '2':'abged', '3':'abgcd', '4':'fgbc',
+    '5':'afgcd', '6':'afgecd', '7':'abc', '8':'abcdefg', '9':'abcdfg'
+  };
+
+  function isHorizontalSeg(seg){ return seg === 'a' || seg === 'g' || seg === 'd'; }
+
+  /* yPct:0 puts the "quick position" presets at the top of the countdown area — i.e. above the
+     numbers, the traditional spot — rather than smack in the middle of the digit display, now
+     that the title's coordinate space spans the whole area (digits included). */
+  var ALIGN_PRESETS = {
+    left:   { xPct:0,   yPct:0 },
+    center: { xPct:0.5, yPct:0 },
+    right:  { xPct:1,   yPct:0 }
+  };
+  function defaultFormat(){ return { pos:{ xPct:0.5, yPct:0 } }; }
+  var GRADIENT_DIRECTIONS = ['horizontal', 'vertical', 'diagonal'];
+  function defaultGradient(){ return { enabled:false, from:'#d8303c', to:'#2b6cff', direction:'horizontal' }; }
+  function defaultRun(text){ return { text:text || '', bold:false, italic:false, color:null, fontSize:null, fontFamily:'' }; }
+
+  /* per-run font family — a small curated set of clearly distinct choices rather than free-form
+     font names, so every saved value is guaranteed renderable. '' (the default option) means "no
+     override", i.e. inherit .countdown-title's own font (Rajdhani) — matches every title saved
+     before this feature existed, so old data renders identically. */
+  var FONT_OPTIONS = [
+    { key:'',            stack:null },
+    { key:'serif',       stack:"'Playfair Display', Georgia, 'Times New Roman', serif" },
+    { key:'monospace',   stack:"'IBM Plex Mono', 'Courier New', monospace" },
+    { key:'handwriting', stack:"'Caveat', 'Segoe Script', 'Bradley Hand', cursive" },
+    { key:'display',     stack:"'Bebas Neue', Impact, 'Arial Black', sans-serif" }
+  ];
+  function fontStackFor(key){
+    var opt = FONT_OPTIONS.filter(function(o){ return o.key === key; })[0];
+    return opt ? opt.stack : null;
+  }
+
+  /* per-tab optional image, shown above the whole countdown (see .countdown-image in the CSS).
+     scale is the sidebar slider's multiplier (0.4–2, default 1) on top of the responsive base
+     size; src is a downscaled/compressed data: URL (see downscaleImage()) or null for "no image". */
+  var MIN_IMAGE_SCALE = 0.4, MAX_IMAGE_SCALE = 2, DEFAULT_IMAGE_SCALE = 1;
+  var IMAGE_MAX_WIDTH = 800, IMAGE_JPEG_QUALITY = 0.85;
+  function defaultImage(){ return { src:null, scale:DEFAULT_IMAGE_SCALE }; }
+  function clampImageScale(v){ return Math.min(MAX_IMAGE_SCALE, Math.max(MIN_IMAGE_SCALE, v)); }
+  /* the image's free-drag position — same {xPct,yPct} fractional convention as tab.format.pos.
+     Defaults to top-center, approximating where the image always used to sit (as a fixed banner
+     above everything) before it became draggable; not an exact pixel match (there isn't one, now
+     that it shares the title's coordinate space) but the closest sensible "untouched" spot. */
+  function defaultImagePos(){ return { xPct:0.5, yPct:0 }; }
+  /* downscales + re-encodes an already-loaded <img> via canvas so a multi-MB photo doesn't blow
+     the localStorage quota once base64-encoded. Flattens onto white first — JPEG has no alpha
+     channel, and canvas composites transparent pixels onto black by default when flattened,
+     which would otherwise turn a transparent PNG's background solid black instead of white. */
+  function downscaleImage(img, maxWidth, quality){
+    var w = img.naturalWidth || img.width;
+    var h = img.naturalHeight || img.height;
+    var scale = w > maxWidth ? maxWidth / w : 1;
+    var targetW = Math.max(1, Math.round(w * scale));
+    var targetH = Math.max(1, Math.round(h * scale));
+    var canvas = document.createElement('canvas');
+    canvas.width = targetW;
+    canvas.height = targetH;
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0, 0, targetW, targetH);
+    ctx.drawImage(img, 0, 0, targetW, targetH);
+    return canvas.toDataURL('image/jpeg', quality);
+  }
+  function plainText(tab){ return (tab.titleRuns || []).map(function(r){ return r.text; }).join(''); }
+  function clamp01(v){ return Math.min(1, Math.max(0, v)); }
+  function clampScale(v){ return Math.min(MAX_SCALE, Math.max(MIN_SCALE, v)); }
+
+  /* ---------- persistence — every countdown, its rich-text title runs and its position survive a reload ---------- */
+  function saveState(){
+    try{
+      var data = {
+        activeId: activeId,
+        displayScale: displayScale,
+        locked: locked,
+        tabs: tabs.map(function(t){
+          return {
+            id:t.id,
+            targetDate:t.targetDate.toISOString(),
+            units:Array.from(t.units),
+            format:t.format || defaultFormat(),
+            segmentColor:t.segmentColor || DEFAULT_SEG_COLOR,
+            titleVisible:t.titleVisible !== false,
+            glow:!!t.glow,
+            gradient:t.gradient || defaultGradient(),
+            image:t.image || defaultImage(),
+            imagePos:t.imagePos || defaultImagePos(),
+            digitsYPct: typeof t.digitsYPct === 'number' ? t.digitsYPct : 0.5,
+            titleRuns:(t.titleRuns || []).map(function(r){
+              return { text:r.text, bold:!!r.bold, italic:!!r.italic, color:r.color || null, fontSize:r.fontSize || null, fontFamily:r.fontFamily || '' };
+            })
+          };
+        })
+      };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    }catch(e){ /* storage unavailable (private mode, quota) — state just won't persist */ }
+  }
+
+  function loadState(){
+    try{
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return null;
+      var parsed = JSON.parse(raw);
+      if (!parsed || !Array.isArray(parsed.tabs)) return null;
+
+      var restored = parsed.tabs.map(function(t){
+        var id = Number(t && t.id);
+        var d = new Date(t && t.targetDate);
+        if (!id || isNaN(d.getTime())) return null;
+        var units = Array.isArray(t.units) ? t.units.filter(function(u){ return VALID_UNIT_KEYS.indexOf(u) !== -1; }) : [];
+        if (units.length === 0) units = VALID_UNIT_KEYS.slice();
+
+        var rf = t.format || {};
+        var pos = rf.pos && typeof rf.pos.xPct === 'number' && typeof rf.pos.yPct === 'number'
+          ? { xPct: clamp01(rf.pos.xPct), yPct: clamp01(rf.pos.yPct) }
+          : (ALIGN_PRESETS[rf.align] || defaultFormat().pos); // migrate old align-only format
+        var format = { pos: pos };
+
+        var titleRuns;
+        if (Array.isArray(t.titleRuns) && t.titleRuns.length){
+          titleRuns = t.titleRuns.map(function(r){
+            return {
+              text: typeof r.text === 'string' ? r.text : '',
+              bold: !!r.bold, italic: !!r.italic,
+              color: typeof r.color === 'string' ? r.color : null,
+              fontSize: (typeof r.fontSize === 'number' && r.fontSize > 0) ? r.fontSize : null,
+              fontFamily: (typeof r.fontFamily === 'string' && FONT_OPTIONS.some(function(o){ return o.key === r.fontFamily; })) ? r.fontFamily : ''
+            };
+          });
+        } else if (typeof t.title === 'string' && t.title){
+          // migrate a pre-rich-text tab: old whole-title bold/italic/fontSize become the single run's style
+          titleRuns = [{ text:t.title, bold:!!rf.bold, italic:!!rf.italic, color:null, fontSize:(typeof rf.fontSize==='number'&&rf.fontSize>0)?rf.fontSize:null, fontFamily:'' }];
+        } else {
+          titleRuns = [];
+        }
+
+        var segmentColor = typeof t.segmentColor === 'string' && HEX_COLOR_RE.test(t.segmentColor)
+          ? t.segmentColor
+          : DEFAULT_SEG_COLOR;
+        var titleVisible = t.titleVisible !== false;
+        var glow = t.glow === true;
+
+        var rg = t.gradient || {};
+        var gd = defaultGradient();
+        var gradient = {
+          enabled: rg.enabled === true,
+          from: typeof rg.from === 'string' && HEX_COLOR_RE.test(rg.from) ? rg.from : gd.from,
+          to: typeof rg.to === 'string' && HEX_COLOR_RE.test(rg.to) ? rg.to : gd.to,
+          direction: GRADIENT_DIRECTIONS.indexOf(rg.direction) !== -1 ? rg.direction : gd.direction
+        };
+
+        var ri = t.image || {};
+        var image = {
+          src: typeof ri.src === 'string' && ri.src.indexOf('data:image/') === 0 ? ri.src : null,
+          scale: typeof ri.scale === 'number' && !isNaN(ri.scale) ? clampImageScale(ri.scale) : DEFAULT_IMAGE_SCALE
+        };
+
+        var rip = t.imagePos || {};
+        var imagePos = (typeof rip.xPct === 'number' && typeof rip.yPct === 'number')
+          ? { xPct: clamp01(rip.xPct), yPct: clamp01(rip.yPct) }
+          : defaultImagePos();
+
+        var digitsYPct = typeof t.digitsYPct === 'number' && !isNaN(t.digitsYPct) ? clamp01(t.digitsYPct) : 0.5;
+
+        return { id:id, targetDate:d, units:new Set(units), format:format, segmentColor:segmentColor, titleVisible:titleVisible, glow:glow, gradient:gradient, image:image, imagePos:imagePos, digitsYPct:digitsYPct, titleRuns:titleRuns };
+      }).filter(Boolean);
+
+      if (restored.length === 0) return null;
+      var scale = typeof parsed.displayScale === 'number' && !isNaN(parsed.displayScale)
+        ? clampScale(parsed.displayScale)
+        : DEFAULT_SCALE;
+      var lockedState = typeof parsed.locked === 'boolean' ? parsed.locked : false;
+      return { activeId: parsed.activeId, displayScale: scale, locked: lockedState, tabs: restored };
+    }catch(e){ return null; }
+  }
+
+  /* ---------- digit cell — each of the 7 segments is its own rotating plate ---------- */
+  function makeDigitCell(){
+    var cell = document.createElement('div');
+    cell.className = 'digit-cell';
+
+    var svg = document.createElementNS(SVG_NS, 'svg');
+    svg.setAttribute('viewBox', '0 0 60 100');
+    svg.setAttribute('aria-hidden', 'true');
+    cell.appendChild(svg);
+
+    var segEls = {};
+    var segOn = {};
+    SEG_ORDER.forEach(function(seg){
+      var poly = document.createElementNS(SVG_NS, 'polygon');
+      poly.setAttribute('points', SEG_POINTS[seg]);
+      poly.setAttribute('class', 'seg');
+      svg.appendChild(poly);
+      segEls[seg] = poly;
+      segOn[seg] = false;
+    });
+
+    function paint(seg, on, delayMs, immediate){
+      var el = segEls[seg];
+      var axis = isHorizontalSeg(seg) ? 'X' : 'Y';
+      var rest = on ? '0deg' : '90deg';
+
+      if (REDUCED_MOTION || immediate){
+        el.style.transition = 'none';
+        el.style.transform = 'rotate' + axis + '(' + rest + ')';
+        el.style.opacity = on ? '1' : '0';
+        el.classList.toggle('on', on);
+        void el.getBoundingClientRect();
+        el.style.transition = '';
+      } else {
+        el.style.transitionDelay = delayMs + 'ms';
+        el.style.transform = 'rotate' + axis + '(' + rest + ')';
+        el.style.opacity = on ? '1' : '0';
+        el.classList.toggle('on', on);
+      }
+      segOn[seg] = on;
+    }
+
+    var state = {
+      el: cell,
+      current: null,
+      setValue: function(d, immediate){
+        if (d === state.current) return;
+        var wantOn = {};
+        (DIGIT_SEGMENTS[d] || '').split('').forEach(function(s){ wantOn[s] = true; });
+
+        var step = 0;
+        SEG_ORDER.forEach(function(seg){
+          var on = !!wantOn[seg];
+          if (on === segOn[seg]) return;
+          paint(seg, on, step * STAGGER_MS, immediate);
+          step++;
+        });
+        state.current = d;
+      }
+    };
+
+    state.setValue('0', true);
+    return state;
+  }
+
+  /* ---------- groups (only the active tab is mounted) ---------- */
+  var digitGroupsEl = document.getElementById('digit-groups');
+  var digitsHandle = document.getElementById('digits-handle'); /* the vertical-drag grip — see rebuildGroups() below for why it's re-appended after every innerHTML wipe */
+  var groups = {};
+
+  function rebuildGroups(){
+    digitGroupsEl.innerHTML = '';
+    digitGroupsEl.appendChild(digitsHandle); /* innerHTML='' above also removes it — move the same node back in rather than losing it (or its listeners) on every rebuild */
+    groups = {};
+    var order = UNIT_DEFS.filter(function(u){ return selected.has(u.key); });
+
+    order.forEach(function(u){
+      var group = document.createElement('div');
+      group.className = 'unit-group';
+
+      var digits = document.createElement('div');
+      digits.className = 'digits';
+
+      var label = document.createElement('span');
+      label.className = 'unit-label';
+      label.textContent = u.label;
+
+      group.appendChild(digits);
+      group.appendChild(label);
+      digitGroupsEl.appendChild(group);
+
+      groups[u.key] = { digitsEl:digits, cells:[] };
+    });
+  }
+
+  function ensureCellCount(key, n){
+    var g = groups[key];
+    if (!g) return;
+    while (g.cells.length < n){
+      var c = makeDigitCell();
+      g.cells.unshift(c);
+      g.digitsEl.insertBefore(c.el, g.digitsEl.firstChild);
+    }
+    while (g.cells.length > n && g.cells.length > 2){
+      var removed = g.cells.shift();
+      g.digitsEl.removeChild(removed.el);
+    }
+  }
+
+  function tick(immediate){
+    if (!targetDate){ return; }
+    var now = Date.now();
+    var diffMs = targetDate.getTime() - now;
+    var totalSeconds = Math.floor(Math.abs(diffMs) / 1000);
+    var remainder = totalSeconds;
+
+    var order = UNIT_DEFS.filter(function(u){ return selected.has(u.key); });
+    order.forEach(function(u){
+      var val = Math.floor(remainder / u.secs);
+      remainder = remainder % u.secs;
+      var str = String(val);
+      if (str.length < 2) str = '0'.repeat(2 - str.length) + str;
+
+      ensureCellCount(u.key, str.length);
+      var g = groups[u.key];
+      for (var i = 0; i < g.cells.length; i++){
+        g.cells[i].setValue(str[i], immediate);
+      }
+    });
+  }
+
+  /* ---------- tabs ---------- */
+  var tabListEl = document.getElementById('tab-list');
+  var dateInput = document.getElementById('target-date-input');
+  var timeInput = document.getElementById('target-time-input');
+  var addBtn = document.getElementById('add-btn');
+  var miniChips = Array.prototype.slice.call(document.querySelectorAll('.mini-chip'));
+
+  function pad(n){ return String(n).padStart(2, '0'); }
+  function toLocalDateValue(d){ return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  function toLocalTimeValue(d){ return pad(d.getHours()) + ':' + pad(d.getMinutes()); }
+  function formatShort(d){
+    return pad(d.getDate()) + '.' + pad(d.getMonth() + 1) + '. ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+  }
+
+  function renderTabList(){
+    tabListEl.innerHTML = '';
+    tabs.forEach(function(tab, idx){
+      var item = document.createElement('div');
+      item.className = 'tab-item' + (tab.id === activeId ? ' active' : '');
+      item.dataset.id = String(tab.id);
+
+      var main = document.createElement('div');
+      main.className = 'tab-main';
+
+      var titleInput = document.createElement('input');
+      titleInput.type = 'text';
+      titleInput.className = 'tab-title-input';
+      titleInput.value = plainText(tab);
+      titleInput.placeholder = 'Countdown ' + (idx + 1);
+      titleInput.setAttribute('aria-label', 'Titel für diesen Countdown');
+      titleInput.addEventListener('click', function(e){ e.stopPropagation(); });
+      titleInput.addEventListener('focus', function(){
+        if (activeId !== tab.id) setActive(tab);
+      });
+      titleInput.addEventListener('input', function(){
+        /* editing the plain text in the sidebar resets rich formatting for this title */
+        tab.titleRuns = titleInput.value ? [defaultRun(titleInput.value)] : [];
+        if (activeId === tab.id) syncTitleDisplay();
+        saveState();
+      });
+
+      var dateEl = document.createElement('span');
+      dateEl.className = 'tab-date';
+      dateEl.textContent = formatShort(tab.targetDate);
+
+      main.appendChild(titleInput);
+      main.appendChild(dateEl);
+
+      var remove = document.createElement('button');
+      remove.type = 'button';
+      remove.className = 'tab-remove';
+      remove.setAttribute('aria-label', 'Countdown entfernen');
+      remove.textContent = '×';
+      remove.addEventListener('click', function(e){
+        e.stopPropagation();
+        removeTab(tab.id);
+      });
+
+      item.appendChild(main);
+      item.appendChild(remove);
+      item.addEventListener('click', function(){ setActive(tab); });
+      tabListEl.appendChild(item);
+    });
+    applySidebarLockState(); /* fresh rows need their disabled state (re)applied too */
+  }
+
+  /* toggles which row looks active without rebuilding the list (keeps a focused title input intact) */
+  function updateActiveHighlight(){
+    var rows = tabListEl.querySelectorAll('.tab-item');
+    for (var i = 0; i < rows.length; i++){
+      rows[i].classList.toggle('active', rows[i].dataset.id === String(activeId));
+    }
+  }
+
+  /* ---------- title heading — rich text (per-range bold/italic/color/size) + free drag position ---------- */
+  var stageEl = document.querySelector('.stage'); /* the digit-groups vertical-drag range */
+  var countdownAreaEl = document.getElementById('countdown-area'); /* the title's whole coordinate space + drag range */
+  var titleZoneEl = document.getElementById('title-zone');
+  var titleToolbarEl = document.getElementById('title-toolbar'); /* the small drag-handle chip — JS-positioned to hover just above the title */
+  var titleEl = document.getElementById('countdown-title');
+  var tbHandle = document.getElementById('tb-handle');
+  var titleFormatEl = document.getElementById('title-format'); /* sidebar panel — the formatting controls live here now */
+  var tfVisible = document.getElementById('tf-visible');
+  var tbSize = document.getElementById('tf-size');
+  var tbSizeValue = document.getElementById('tf-size-value');
+  var tfFont = document.getElementById('tf-font');
+  var tbColor = document.getElementById('tf-color');
+  var tbBold = document.getElementById('tf-bold');
+  var tbItalic = document.getElementById('tf-italic');
+  var tbAlignBtns = Array.prototype.slice.call(document.querySelectorAll('.tf-align'));
+  var tfGradientEnabled = document.getElementById('tf-gradient-enabled');
+  var tfGradientControls = document.getElementById('tf-gradient-controls');
+  var tfGradientFrom = document.getElementById('tf-gradient-from');
+  var tfGradientTo = document.getElementById('tf-gradient-to');
+  var tfGradientDirBtns = Array.prototype.slice.call(document.querySelectorAll('.tf-gradient-dir'));
+
+  function activeTab(){ return tabs.find(function(t){ return t.id === activeId; }); }
+
+  /* ---- run model helpers ---- */
+  function runsInRange(runs, start, end){
+    var pos = 0, out = [];
+    runs.forEach(function(r){
+      var rs = pos, re = pos + r.text.length;
+      if (re > start && rs < end) out.push(r);
+      pos = re;
+    });
+    return out;
+  }
+  function rangeUniform(tab, start, end, prop){
+    var runs = start === end ? tab.titleRuns : runsInRange(tab.titleRuns, start, end);
+    if (runs.length === 0) return undefined;
+    var first = runs[0][prop];
+    var allSame = runs.every(function(r){ return r[prop] === first; });
+    return allSame ? first : undefined;
+  }
+  function splitRunsAtOffsets(runs, offsets){
+    var result = [], pos = 0;
+    runs.forEach(function(run){
+      var runStart = pos, runEnd = pos + run.text.length;
+      var cuts = offsets.filter(function(o){ return o > runStart && o < runEnd; }).sort(function(a,b){ return a-b; });
+      var segStart = runStart;
+      cuts.forEach(function(cut){
+        result.push(Object.assign({}, run, { text: run.text.slice(segStart - runStart, cut - runStart) }));
+        segStart = cut;
+      });
+      result.push(Object.assign({}, run, { text: run.text.slice(segStart - runStart) }));
+      pos = runEnd;
+    });
+    return result.filter(function(r){ return r.text.length > 0; });
+  }
+  function applyFormatToRange(tab, start, end, setter){
+    if (!tab.titleRuns.length) return;
+    if (start === end){
+      tab.titleRuns.forEach(setter);
+      return;
+    }
+    var runs = splitRunsAtOffsets(tab.titleRuns, [start, end]);
+    var pos = 0;
+    runs.forEach(function(run){
+      var rs = pos, re = pos + run.text.length;
+      if (rs >= start && re <= end) setter(run);
+      pos = re;
+    });
+    tab.titleRuns = runs;
+  }
+
+  /* ---- selection <-> plain-text offsets (works across the run <span> elements) ---- */
+  function getSelectionOffsets(){
+    var sel = window.getSelection();
+    if (!sel || sel.rangeCount === 0) return null;
+    var range = sel.getRangeAt(0);
+    if (!titleEl.contains(range.commonAncestorContainer)) return null;
+    var pre = document.createRange();
+    pre.selectNodeContents(titleEl);
+    pre.setEnd(range.startContainer, range.startOffset);
+    var start = pre.toString().length;
+    var end = start + range.toString().length;
+    return { start:start, end:end };
+  }
+  function findTextNodeAtOffset(root, offset){
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    var acc = 0, node, last = null;
+    while ((node = walker.nextNode())){
+      var len = node.textContent.length;
+      if (acc + len >= offset) return { node:node, offset:offset - acc };
+      acc += len;
+      last = node;
+    }
+    if (last) return { node:last, offset:last.textContent.length };
+    return null;
+  }
+  function restoreSelection(start, end){
+    var startPos = findTextNodeAtOffset(titleEl, start);
+    var endPos = findTextNodeAtOffset(titleEl, end);
+    if (!startPos || !endPos) return;
+    var range = document.createRange();
+    range.setStart(startPos.node, startPos.offset);
+    range.setEnd(endPos.node, endPos.offset);
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+  }
+
+  function renderRuns(tab){
+    titleEl.innerHTML = '';
+    /* while a gradient is active for this tab it overrides every run's own color (the gradient
+       is painted on titleEl itself via background-clip:text — see applyTitleGradient()), so a
+       run's color is deliberately NOT applied to its span here; it stays stored on the run
+       untouched and simply starts being used again the moment the gradient is switched off. */
+    var gradientOn = !!(tab.gradient && tab.gradient.enabled);
+    (tab.titleRuns || []).forEach(function(run){
+      if (!run.text) return;
+      var span = document.createElement('span');
+      span.textContent = run.text;
+      if (run.bold) span.style.fontWeight = '700';
+      if (run.italic) span.style.fontStyle = 'italic';
+      if (run.color && !gradientOn) span.style.color = run.color;
+      if (run.fontSize) span.style.fontSize = run.fontSize + 'px';
+      var stack = fontStackFor(run.fontFamily);
+      if (stack) span.style.fontFamily = stack;
+      titleEl.appendChild(span);
+    });
+  }
+
+  /* ---- title gradient: paints a linear-gradient on titleEl itself and clips it to the text via
+     background-clip:text, so it spans the WHOLE heading regardless of per-run colors (which
+     renderRuns() above skips applying while a gradient is on). Bold/italic/fontSize per run are
+     unaffected either way — only color is ever overridden. ---- */
+  function gradientAngle(direction){
+    if (direction === 'vertical') return '180deg';
+    if (direction === 'diagonal') return '135deg';
+    return '90deg'; /* horizontal */
+  }
+  function applyTitleGradient(tab){
+    var g = (tab && tab.gradient) || defaultGradient();
+    if (g.enabled){
+      titleEl.style.background = 'linear-gradient(' + gradientAngle(g.direction) + ', ' + g.from + ', ' + g.to + ')';
+      titleEl.style.webkitBackgroundClip = 'text';
+      titleEl.style.backgroundClip = 'text';
+      titleEl.style.color = 'transparent';
+      titleEl.style.webkitTextFillColor = 'transparent';
+    } else {
+      titleEl.style.background = '';
+      titleEl.style.webkitBackgroundClip = '';
+      titleEl.style.backgroundClip = '';
+      titleEl.style.color = '';
+      titleEl.style.webkitTextFillColor = '';
+    }
+  }
+
+  /* keeps the sidebar's gradient controls (checkbox, from/to colors, direction buttons) in sync
+     with whichever tab is active, and shows/hides the from/to/direction row with the checkbox */
+  function syncGradientControls(tab){
+    var g = (tab && tab.gradient) || defaultGradient();
+    tfGradientEnabled.checked = g.enabled;
+    tfGradientFrom.value = g.from;
+    tfGradientTo.value = g.to;
+    tfGradientDirBtns.forEach(function(btn){
+      var active = btn.dataset.dir === g.direction;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-pressed', String(active));
+    });
+    tfGradientControls.hidden = !g.enabled;
+  }
+
+  /* ---- layout: the title's whole coordinate space + drag range is the countdown area (digits
+     included) — it can sit anywhere in it, overlapping the numbers or beside/below them. The
+     small drag handle isn't fixed in place; it's repositioned to hover just above wherever the
+     title currently is, so it stays reachable no matter where the title has been moved to. ---- */
+  function positionHandle(){
+    var areaRect = countdownAreaEl.getBoundingClientRect();
+    var titleRect = titleEl.getBoundingClientRect();
+    var handleH = tbHandle.getBoundingClientRect().height || 26;
+    var left = titleRect.left - areaRect.left;
+    var top = titleRect.top - areaRect.top - handleH - 6;
+    if (top < 0) top = Math.max(0, titleRect.top - areaRect.top) + 4; /* no room above — tuck inside the title's top edge instead */
+    titleToolbarEl.style.left = left + 'px';
+    titleToolbarEl.style.top = top + 'px';
+  }
+
+  function positionTitle(){
+    var tab = activeTab();
+    if (!tab || titleZoneEl.hidden) return;
+    var pos = (tab.format && tab.format.pos) || defaultFormat().pos;
+    var areaRect = countdownAreaEl.getBoundingClientRect();
+    var titleRect = titleEl.getBoundingClientRect();
+    var maxX = Math.max(0, areaRect.width - titleRect.width);
+    var maxY = Math.max(0, areaRect.height - titleRect.height);
+    titleEl.style.left = (pos.xPct * maxX) + 'px';
+    titleEl.style.top = (pos.yPct * maxY) + 'px';
+    positionHandle();
+  }
+
+  if (window.ResizeObserver){
+    new ResizeObserver(function(){ positionTitle(); positionImage(); }).observe(countdownAreaEl);
+  }
+
+  /* ---- vertical-only digit drag — moves ONLY #digit-groups (not the title, not the image) up
+     or down within .stage, to make room; horizontal position stays fixed (a plain translateY,
+     never translateX). Stored per-tab as digitsYPct, a 0..1 fraction of the available range the
+     same way every other position in this app is (0.5 = centered = untouched, matching the
+     digits' fixed position before this feature existed, so old saved tabs render unchanged).
+     The image deliberately does NOT follow this drag (an earlier version of this feature made it
+     track the digits' offset, but that defeated the whole point — dragging the numbers is meant
+     to open up genuine free space for the title/image, which a fixed relative offset can't do;
+     see "Known design decisions"). ---- */
+  function digitsVerticalRange(){
+    var stageRect = stageEl.getBoundingClientRect();
+    var digitsRect = digitGroupsEl.getBoundingClientRect();
+    return Math.max(0, (stageRect.height - digitsRect.height) / 2);
+  }
+  function positionDigits(){
+    var tab = activeTab();
+    var pct = (tab && typeof tab.digitsYPct === 'number') ? tab.digitsYPct : 0.5;
+    var offset = (pct - 0.5) * 2 * digitsVerticalRange();
+    digitGroupsEl.style.transform = offset ? 'translateY(' + offset + 'px)' : '';
+  }
+  if (window.ResizeObserver){
+    new ResizeObserver(function(){ positionDigits(); }).observe(digitGroupsEl);
+    /* .stage's own box is fixed (see the fixed-viewport-shell CSS) and never changes as a result
+       of updateScaleCeiling()'s own corrections, so observing it here is safe from feedback loops
+       — only a genuine external change (window resize, sidebar collapse/expand) ever fires this. */
+    new ResizeObserver(function(){ updateScaleCeiling(); }).observe(stageEl); /* applyDisplayScale() inside it already re-runs positionTitle()/positionDigits()/positionImage() */
+  }
+
+  var digitsDragState = null;
+  digitsHandle.addEventListener('pointerdown', function(e){
+    if (locked) return;
+    var tab = activeTab();
+    if (!tab) return;
+    e.preventDefault();
+    var range = digitsVerticalRange();
+    var pct = typeof tab.digitsYPct === 'number' ? tab.digitsYPct : 0.5;
+    digitsDragState = {
+      pointerId: e.pointerId,
+      startY: e.clientY,
+      startOffset: (pct - 0.5) * 2 * range,
+      range: range
+    };
+    digitsHandle.setPointerCapture(e.pointerId);
+    digitGroupsEl.classList.add('digits-dragging');
+  });
+  digitsHandle.addEventListener('pointermove', function(e){
+    if (!digitsDragState) return;
+    var dy = e.clientY - digitsDragState.startY;
+    var offset = Math.min(digitsDragState.range, Math.max(-digitsDragState.range, digitsDragState.startOffset + dy));
+    digitsDragState.currentOffset = offset;
+    digitGroupsEl.style.transform = offset ? 'translateY(' + offset + 'px)' : '';
+  });
+  function endDigitsDrag(){
+    if (!digitsDragState) return;
+    var tab = activeTab();
+    if (tab){
+      var offset = typeof digitsDragState.currentOffset === 'number' ? digitsDragState.currentOffset : digitsDragState.startOffset;
+      var pct = digitsDragState.range > 0 ? clamp01(0.5 + (offset / digitsDragState.range) / 2) : 0.5;
+      tab.digitsYPct = pct;
+      saveState();
+    }
+    digitsDragState = null;
+    digitGroupsEl.classList.remove('digits-dragging');
+  }
+  digitsHandle.addEventListener('pointerup', endDigitsDrag);
+  digitsHandle.addEventListener('pointercancel', endDigitsDrag);
+
+  function syncToolbarSelectionState(){
+    var tab = activeTab();
+    if (!tab) return;
+    var sel = getSelectionOffsets() || { start:0, end:0 };
+    var size = rangeUniform(tab, sel.start, sel.end, 'fontSize');
+    tbSize.value = size || Math.round(parseFloat(getComputedStyle(titleEl).fontSize)) || tbSize.value;
+    tbSizeValue.textContent = tbSize.value;
+    var color = rangeUniform(tab, sel.start, sel.end, 'color');
+    tbColor.value = color || '#000000';
+    var bold = !!rangeUniform(tab, sel.start, sel.end, 'bold');
+    tbBold.classList.toggle('active', bold);
+    tbBold.setAttribute('aria-pressed', String(bold));
+    var italic = !!rangeUniform(tab, sel.start, sel.end, 'italic');
+    tbItalic.classList.toggle('active', italic);
+    tbItalic.setAttribute('aria-pressed', String(italic));
+    var font = rangeUniform(tab, sel.start, sel.end, 'fontFamily');
+    tfFont.value = font || '';
+  }
+
+  /* resets the PER-RUN format controls (size/color/bold/italic/font) — these have nothing
+     meaningful to show when there are no title runs at all, unlike the gradient (see below). */
+  function resetFormatControls(){
+    tbSize.value = 32;
+    tbSizeValue.textContent = '32';
+    tbColor.value = '#000000';
+    tbBold.classList.remove('active');
+    tbBold.setAttribute('aria-pressed', 'false');
+    tbItalic.classList.remove('active');
+    tbItalic.setAttribute('aria-pressed', 'false');
+    tfFont.value = '';
+  }
+
+  function syncTitleDisplay(){
+    var tab = activeTab();
+    var text = tab ? plainText(tab) : '';
+    var visible = tab ? tab.titleVisible !== false : true;
+    tfVisible.checked = visible;
+    /* the gradient is TAB-level state (tab.gradient), not per-run — unlike size/color/bold/
+       italic/font it has something real to show even when the title has no text yet, so it's
+       synced unconditionally here rather than inside the "no text" branch's resetFormatControls().
+       Getting this wrong once meant a saved "gradient on" tab showed the checkbox as off after a
+       reload whenever its title happened to be empty, even though the data was never actually
+       lost — don't move this back inside the early-return below. */
+    syncGradientControls(tab);
+    applyTitleGradient(tab);
+
+    if (!tab || !text.trim()){
+      titleEl.innerHTML = '';
+      titleZoneEl.hidden = true;
+      titleZoneEl.classList.remove('toolbar-open');
+      resetFormatControls();
+      return;
+    }
+
+    /* keep the title's rich content + formatting-control sync current even while hidden from
+       the countdown, so the sidebar still names the tab and reflects its saved formatting,
+       and checking the box back on shows it exactly as it was */
+    renderRuns(tab);
+    if (visible){
+      titleZoneEl.hidden = false;
+      positionTitle();
+    } else {
+      titleZoneEl.hidden = true;
+      titleZoneEl.classList.remove('toolbar-open');
+    }
+    syncToolbarSelectionState();
+  }
+
+  tfVisible.addEventListener('change', function(){
+    var tab = activeTab();
+    if (!tab) return;
+    tab.titleVisible = tfVisible.checked;
+    syncTitleDisplay();
+    saveState();
+  });
+
+  titleEl.addEventListener('click', function(e){
+    if (locked) return;
+    e.stopPropagation();
+    titleZoneEl.classList.toggle('toolbar-open');
+    syncToolbarSelectionState();
+  });
+  document.addEventListener('click', function(e){
+    if (!titleZoneEl.contains(e.target)) titleZoneEl.classList.remove('toolbar-open');
+  });
+  document.addEventListener('selectionchange', function(){
+    var sel = window.getSelection();
+    if (sel && sel.rangeCount > 0 && titleEl.contains(sel.getRangeAt(0).commonAncestorContainer)){
+      syncToolbarSelectionState();
+    }
+  });
+
+  /* capture the title's selection before a sidebar formatting control steals focus —
+     works from the sidebar just as well as it did from an adjacent toolbar, since the capture
+     phase fires before the clicked control's own default (focus-shifting) behavior either way */
+  var savedSelection = { start:0, end:0 };
+  titleFormatEl.addEventListener('mousedown', function(){
+    savedSelection = getSelectionOffsets() || savedSelection;
+  }, true);
+
+  [tbBold, tbItalic].concat(tbAlignBtns).forEach(function(btn){
+    btn.addEventListener('mousedown', function(e){ e.preventDefault(); });
+  });
+
+  function afterFormatChange(tab){
+    renderRuns(tab);
+    restoreSelection(savedSelection.start, savedSelection.end);
+    positionTitle();
+    syncToolbarSelectionState();
+    saveState();
+  }
+
+  /* Bug fixed — the font-size slider only ever "jumped" to the clicked position instead of
+     dragging smoothly: afterFormatChange()'s restoreSelection() sets a real DOM Selection range
+     INSIDE the contenteditable title, which silently moves document.activeElement there (setting
+     a Selection inside a contenteditable focuses it, per spec). Doing that from inside THIS
+     <input type="range">'s own 'input' handler — fired continuously while the user is mid-drag —
+     blurs the slider away from itself on the very first tick, which is enough to break the
+     browser's native thumb-drag tracking on a real mouse/trackpad (a synthetic/automated drag can
+     still look fine, since it doesn't always exercise the same focus/capture path a real pointer
+     drag does — this only showed up in real usage). Fixed by giving the size slider a lighter
+     'input' handler that renders the live preview and persists the value, WITHOUT touching
+     Selection/focus at all, and moving the selection-restore + full toolbar resync to a 'change'
+     listener instead — 'change' fires once, after the drag ends (or after a single click), when
+     stealing focus back to the title is no longer disruptive. See "Known design decisions". */
+  tbSize.addEventListener('input', function(){
+    var tab = activeTab();
+    if (!tab) return;
+    var v = parseInt(tbSize.value, 10);
+    if (isNaN(v) || v <= 0) return;
+    tbSizeValue.textContent = v;
+    applyFormatToRange(tab, savedSelection.start, savedSelection.end, function(run){ run.fontSize = v; });
+    renderRuns(tab);
+    positionTitle();
+    saveState();
+  });
+  tbSize.addEventListener('change', function(){
+    var tab = activeTab();
+    if (!tab) return;
+    restoreSelection(savedSelection.start, savedSelection.end);
+    syncToolbarSelectionState();
+  });
+
+  tbColor.addEventListener('input', function(){
+    var tab = activeTab();
+    if (!tab) return;
+    applyFormatToRange(tab, savedSelection.start, savedSelection.end, function(run){ run.color = tbColor.value; });
+    afterFormatChange(tab);
+  });
+
+  tfFont.addEventListener('change', function(){
+    var tab = activeTab();
+    if (!tab) return;
+    var v = tfFont.value;
+    applyFormatToRange(tab, savedSelection.start, savedSelection.end, function(run){ run.fontFamily = v; });
+    afterFormatChange(tab);
+  });
+
+  tbBold.addEventListener('click', function(){
+    var tab = activeTab();
+    if (!tab) return;
+    var next = !rangeUniform(tab, savedSelection.start, savedSelection.end, 'bold');
+    applyFormatToRange(tab, savedSelection.start, savedSelection.end, function(run){ run.bold = next; });
+    afterFormatChange(tab);
+  });
+
+  tbItalic.addEventListener('click', function(){
+    var tab = activeTab();
+    if (!tab) return;
+    var next = !rangeUniform(tab, savedSelection.start, savedSelection.end, 'italic');
+    applyFormatToRange(tab, savedSelection.start, savedSelection.end, function(run){ run.italic = next; });
+    afterFormatChange(tab);
+  });
+
+  tbAlignBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var tab = activeTab();
+      if (!tab) return;
+      tab.format = tab.format || defaultFormat();
+      tab.format.pos = ALIGN_PRESETS[btn.dataset.align];
+      positionTitle();
+      saveState();
+    });
+  });
+
+  /* ---- title gradient controls — enabled toggle, from/to colors, direction ---- */
+  tfGradientEnabled.addEventListener('change', function(){
+    var tab = activeTab();
+    if (!tab) return;
+    tab.gradient = tab.gradient || defaultGradient();
+    tab.gradient.enabled = tfGradientEnabled.checked;
+    tfGradientControls.hidden = !tab.gradient.enabled;
+    applyTitleGradient(tab);
+    renderRuns(tab); /* re-render so per-run colors show/hide correctly under the gradient */
+    positionTitle();
+    saveState();
+  });
+  tfGradientFrom.addEventListener('input', function(){
+    var tab = activeTab();
+    if (!tab) return;
+    tab.gradient = tab.gradient || defaultGradient();
+    tab.gradient.from = tfGradientFrom.value;
+    applyTitleGradient(tab);
+    saveState();
+  });
+  tfGradientTo.addEventListener('input', function(){
+    var tab = activeTab();
+    if (!tab) return;
+    tab.gradient = tab.gradient || defaultGradient();
+    tab.gradient.to = tfGradientTo.value;
+    applyTitleGradient(tab);
+    saveState();
+  });
+  tfGradientDirBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var tab = activeTab();
+      if (!tab) return;
+      tab.gradient = tab.gradient || defaultGradient();
+      tab.gradient.direction = btn.dataset.dir;
+      tfGradientDirBtns.forEach(function(b){
+        var active = b === btn;
+        b.classList.toggle('active', active);
+        b.setAttribute('aria-pressed', String(active));
+      });
+      applyTitleGradient(tab);
+      saveState();
+    });
+  });
+
+  /* ---- drag the title freely anywhere in the countdown area (grab the handle, not the text itself) ---- */
+  var dragState = null;
+  tbHandle.addEventListener('pointerdown', function(e){
+    if (locked) return;
+    var tab = activeTab();
+    if (!tab) return;
+    e.preventDefault();
+    var areaRect = countdownAreaEl.getBoundingClientRect();
+    var titleRect = titleEl.getBoundingClientRect();
+    dragState = {
+      pointerId: e.pointerId,
+      startX: e.clientX, startY: e.clientY,
+      startLeft: titleRect.left - areaRect.left,
+      startTop: titleRect.top - areaRect.top,
+      maxX: Math.max(0, areaRect.width - titleRect.width),
+      maxY: Math.max(0, areaRect.height - titleRect.height)
+    };
+    tbHandle.setPointerCapture(e.pointerId);
+    titleZoneEl.classList.add('dragging', 'toolbar-open');
+  });
+  tbHandle.addEventListener('pointermove', function(e){
+    if (!dragState) return;
+    var dx = e.clientX - dragState.startX;
+    var dy = e.clientY - dragState.startY;
+    var left = Math.min(Math.max(dragState.startLeft + dx, 0), dragState.maxX);
+    var top = Math.min(Math.max(dragState.startTop + dy, 0), dragState.maxY);
+    titleEl.style.left = left + 'px';
+    titleEl.style.top = top + 'px';
+    positionHandle();
+  });
+  function endDrag(){
+    if (!dragState) return;
+    var tab = activeTab();
+    if (tab){
+      tab.format = tab.format || defaultFormat();
+      var xPct = dragState.maxX > 0 ? clamp01(parseFloat(titleEl.style.left) / dragState.maxX) : 0;
+      var yPct = dragState.maxY > 0 ? clamp01(parseFloat(titleEl.style.top) / dragState.maxY) : 0;
+      tab.format.pos = { xPct:xPct, yPct:yPct };
+      saveState();
+    }
+    dragState = null;
+    titleZoneEl.classList.remove('dragging');
+  }
+  tbHandle.addEventListener('pointerup', endDrag);
+  tbHandle.addEventListener('pointercancel', endDrag);
+
+  /* the form always edits whichever tab is active — each tab keeps its own date + units.
+     Locked also disables these (view-only), same as every other sidebar editing control. */
+  function syncFormToActiveTab(){
+    var tab = tabs.find(function(t){ return t.id === activeId; });
+    dateInput.disabled = !tab || locked;
+    timeInput.disabled = !tab || locked;
+    miniChips.forEach(function(btn){ btn.disabled = !tab || locked; });
+    if (!tab){
+      dateInput.value = '';
+      timeInput.value = '';
+      miniChips.forEach(function(btn){ btn.classList.remove('active'); });
+      return;
+    }
+    dateInput.value = toLocalDateValue(tab.targetDate);
+    timeInput.value = toLocalTimeValue(tab.targetDate);
+    miniChips.forEach(function(btn){
+      btn.classList.toggle('active', tab.units.has(btn.dataset.unit));
+    });
+  }
+
+  function setActive(tab){
+    activeId = tab.id;
+    targetDate = tab.targetDate;
+    selected = tab.units;
+    rebuildGroups();
+    tick(true);
+    updateActiveHighlight();
+    syncFormToActiveTab();
+    applySegmentColor(tab);
+    applyGlow(tab);
+    applyImage(tab);
+    updateScaleCeiling(); /* the new tab may show a different number of units, changing how much room the digits need */
+    positionDigits();
+    applySidebarLockState();
+    syncTitleDisplay();
+    saveState();
+  }
+
+  function removeTab(id){
+    var idx = tabs.findIndex(function(t){ return t.id === id; });
+    if (idx === -1) return;
+    tabs.splice(idx, 1);
+
+    if (activeId === id){
+      if (tabs.length > 0){
+        renderTabList();
+        setActive(tabs[Math.max(0, idx - 1)]);
+      } else {
+        activeId = null;
+        targetDate = null;
+        digitGroupsEl.innerHTML = '<p class="empty-state">Kein Countdown aktiv — links einen Zeitpunkt eintragen.</p>';
+        renderTabList();
+        syncFormToActiveTab();
+        applySegmentColor(null);
+        applyGlow(null);
+        applyImage(null);
+        positionDigits();
+        syncTitleDisplay();
+        saveState();
+      }
+    } else {
+      renderTabList();
+      saveState();
+    }
+  }
+
+  addBtn.addEventListener('click', function(){
+    var base = tabs.find(function(t){ return t.id === activeId; });
+    var baseDate = base ? base.targetDate : new Date();
+    var newTarget = new Date(baseDate.getTime() + 24 * 3600 * 1000);
+    var newUnits = base ? new Set(base.units) : new Set(['d','h','m','s']);
+    var newColor = base ? base.segmentColor : DEFAULT_SEG_COLOR;
+    var tab = { id: nextId++, titleRuns: [], targetDate: newTarget, units: newUnits, format: defaultFormat(), segmentColor: newColor, titleVisible: true, glow: false, gradient: defaultGradient(), image: defaultImage(), imagePos: defaultImagePos(), digitsYPct: 0.5 };
+    tabs.push(tab);
+    renderTabList();
+    setActive(tab);
+  });
+
+  /* one shared handler for both fields — a change to either the date or the time recombines both
+     into a single Date, same as the old single datetime-local control produced. An empty time
+     (the native <input type="time"> allows clearing it) falls back to 00:00 rather than being
+     treated as invalid, since the date alone is still a perfectly usable target; an empty/invalid
+     date is what actually blocks the update, matching the old control's behavior when cleared. */
+  function applyDateTimeInputs(){
+    var tab = tabs.find(function(t){ return t.id === activeId; });
+    if (!tab) return;
+    var rawDate = dateInput.value;
+    var rawTime = timeInput.value || '00:00';
+    var parsed = rawDate ? new Date(rawDate + 'T' + rawTime) : null;
+    if (!parsed || isNaN(parsed.getTime())){
+      dateInput.classList.add('invalid');
+      setTimeout(function(){ dateInput.classList.remove('invalid'); }, 450);
+      return;
+    }
+    tab.targetDate = parsed;
+    targetDate = parsed;
+    tick(true);
+    var dateEl = tabListEl.querySelector('.tab-item[data-id="' + tab.id + '"] .tab-date');
+    if (dateEl) dateEl.textContent = formatShort(tab.targetDate);
+    saveState();
+  }
+  dateInput.addEventListener('change', applyDateTimeInputs);
+  timeInput.addEventListener('change', applyDateTimeInputs);
+
+  miniChips.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var tab = tabs.find(function(t){ return t.id === activeId; });
+      if (!tab) return;
+      var key = btn.dataset.unit;
+      if (tab.units.has(key)){
+        if (tab.units.size === 1){
+          btn.classList.add('warn');
+          setTimeout(function(){ btn.classList.remove('warn'); }, 450);
+          return;
+        }
+        tab.units.delete(key);
+      } else {
+        tab.units.add(key);
+      }
+      btn.classList.toggle('active', tab.units.has(key));
+      selected = tab.units;
+      rebuildGroups();
+      tick(true);
+      updateScaleCeiling(); /* fewer/more unit groups changes how much room the digits need */
+      positionDigits();
+      saveState();
+    });
+  });
+
+  /* ---------- segment color picker — per countdown ---------- */
+  var segmentColorInput = document.getElementById('segment-color');
+  function applySegmentColor(tab){
+    var color = (tab && tab.segmentColor) || DEFAULT_SEG_COLOR;
+    digitGroupsEl.style.setProperty('--seg-color', color);
+    segmentColorInput.value = color;
+  }
+  segmentColorInput.addEventListener('input', function(){
+    var tab = activeTab();
+    if (!tab) return;
+    tab.segmentColor = segmentColorInput.value;
+    digitGroupsEl.style.setProperty('--seg-color', tab.segmentColor);
+    saveState();
+  });
+
+  /* ---------- glow toggle — per countdown, off by default; lights up the segments currently
+     "on" in their configured segment color via a CSS drop-shadow (see .digit-groups.glow-on) ---------- */
+  var glowToggle = document.getElementById('glow-toggle');
+  function applyGlow(tab){
+    var on = !!(tab && tab.glow);
+    digitGroupsEl.classList.toggle('glow-on', on);
+    glowToggle.checked = on;
+  }
+  glowToggle.addEventListener('change', function(){
+    var tab = activeTab();
+    if (!tab) return;
+    tab.glow = glowToggle.checked;
+    digitGroupsEl.classList.toggle('glow-on', tab.glow);
+    saveState();
+  });
+
+  /* ---------- per-tab image — shown above the whole countdown, freely draggable anywhere in the
+     countdown area exactly like the title; see .image-wrap/.countdown-image in the CSS and
+     downscaleImage() above for why the stored src is already a small, compressed JPEG ---------- */
+  var imageWrapEl = document.getElementById('image-wrap');
+  var imageHandle = document.getElementById('image-handle');
+  var countdownImageEl = document.getElementById('countdown-image');
+  var imageUploadInput = document.getElementById('image-upload');
+  var imageUploadBtn = document.getElementById('image-upload-btn');
+  var imageRemoveBtn = document.getElementById('image-remove-btn');
+  var imageScaleRow = document.getElementById('image-scale-row');
+  var imageScaleSlider = document.getElementById('image-scale-slider');
+  var imageScaleValueEl = document.getElementById('image-scale-value');
+
+  function applyImage(tab){
+    var img = (tab && tab.image) || defaultImage();
+    if (img.src){
+      countdownImageEl.src = img.src;
+      imageWrapEl.hidden = false;
+      imageScaleRow.hidden = false;
+    } else {
+      countdownImageEl.removeAttribute('src');
+      imageWrapEl.hidden = true;
+      imageScaleRow.hidden = true;
+    }
+    var scale = clampImageScale(typeof img.scale === 'number' ? img.scale : DEFAULT_IMAGE_SCALE);
+    countdownImageEl.style.setProperty('--image-scale', scale);
+    imageScaleSlider.value = scale;
+    imageScaleValueEl.textContent = Math.round(scale * 100) + '%';
+    positionImage();
+  }
+
+  /* ---- image position: a free 2-D drag exactly like the title's (grab the handle, not the
+     image itself — same reasoning as the title's own handle, plus it sidesteps the browser's
+     native image drag-and-drop), and deliberately fully independent of the digits' own vertical
+     drag — an earlier version made the image follow the digits' offset, but that was reverted:
+     dragging the numbers is meant to open up real free space for the image/title, which it can't
+     do if they're glued together. Move the image out of the way yourself instead. ---- */
+  function positionImage(){
+    var tab = activeTab();
+    if (!tab || imageWrapEl.hidden) return;
+    var pos = tab.imagePos || defaultImagePos();
+    var areaRect = countdownAreaEl.getBoundingClientRect();
+    var imgRect = imageWrapEl.getBoundingClientRect();
+    var maxX = Math.max(0, areaRect.width - imgRect.width);
+    var maxY = Math.max(0, areaRect.height - imgRect.height);
+    imageWrapEl.style.left = (pos.xPct * maxX) + 'px';
+    imageWrapEl.style.top = (pos.yPct * maxY) + 'px';
+  }
+  if (window.ResizeObserver){
+    new ResizeObserver(function(){ positionImage(); }).observe(imageWrapEl);
+  }
+
+  var imageDragState = null;
+  imageHandle.addEventListener('pointerdown', function(e){
+    if (locked) return;
+    var tab = activeTab();
+    if (!tab) return;
+    e.preventDefault();
+    var areaRect = countdownAreaEl.getBoundingClientRect();
+    var imgRect = imageWrapEl.getBoundingClientRect();
+    imageDragState = {
+      pointerId: e.pointerId,
+      startX: e.clientX, startY: e.clientY,
+      startLeft: imgRect.left - areaRect.left,
+      startTop: imgRect.top - areaRect.top,
+      maxX: Math.max(0, areaRect.width - imgRect.width),
+      maxY: Math.max(0, areaRect.height - imgRect.height)
+    };
+    imageHandle.setPointerCapture(e.pointerId);
+    imageWrapEl.classList.add('dragging');
+  });
+  imageHandle.addEventListener('pointermove', function(e){
+    if (!imageDragState) return;
+    var dx = e.clientX - imageDragState.startX;
+    var dy = e.clientY - imageDragState.startY;
+    var left = Math.min(Math.max(imageDragState.startLeft + dx, 0), imageDragState.maxX);
+    var top = Math.min(Math.max(imageDragState.startTop + dy, 0), imageDragState.maxY);
+    imageWrapEl.style.left = left + 'px';
+    imageWrapEl.style.top = top + 'px';
+  });
+  function endImageDrag(){
+    if (!imageDragState) return;
+    var tab = activeTab();
+    if (tab){
+      var xPct = imageDragState.maxX > 0 ? clamp01(parseFloat(imageWrapEl.style.left) / imageDragState.maxX) : 0;
+      var yPct = imageDragState.maxY > 0 ? clamp01(parseFloat(imageWrapEl.style.top) / imageDragState.maxY) : 0;
+      tab.imagePos = { xPct:xPct, yPct:yPct };
+      saveState();
+    }
+    imageDragState = null;
+    imageWrapEl.classList.remove('dragging');
+  }
+  imageHandle.addEventListener('pointerup', endImageDrag);
+  imageHandle.addEventListener('pointercancel', endImageDrag);
+
+  imageUploadBtn.addEventListener('click', function(){
+    if (locked) return;
+    imageUploadInput.click();
+  });
+  imageUploadInput.addEventListener('change', function(){
+    var file = imageUploadInput.files && imageUploadInput.files[0];
+    imageUploadInput.value = ''; /* clears the picker so re-selecting the same file still fires 'change' next time */
+    if (!file || !/^image\//.test(file.type)) return;
+    var tab = activeTab();
+    if (!tab) return;
+    var reader = new FileReader();
+    reader.onload = function(){
+      var probe = new Image();
+      probe.onload = function(){
+        var dataUrl = downscaleImage(probe, IMAGE_MAX_WIDTH, IMAGE_JPEG_QUALITY);
+        tab.image = tab.image || defaultImage();
+        tab.image.src = dataUrl;
+        applyImage(tab);
+        applySidebarLockState();
+        saveState();
+      };
+      probe.src = reader.result; /* onerror is deliberately not handled — an unreadable/corrupt
+        file just silently doesn't produce an image, no different from not uploading one */
+    };
+    reader.readAsDataURL(file);
+  });
+  imageRemoveBtn.addEventListener('click', function(){
+    var tab = activeTab();
+    if (!tab) return;
+    tab.image = defaultImage();
+    applyImage(tab);
+    applySidebarLockState();
+    saveState();
+  });
+  imageScaleSlider.addEventListener('input', function(){
+    var tab = activeTab();
+    if (!tab || !tab.image || !tab.image.src) return;
+    tab.image.scale = clampImageScale(parseFloat(imageScaleSlider.value));
+    countdownImageEl.style.setProperty('--image-scale', tab.image.scale);
+    imageScaleValueEl.textContent = Math.round(tab.image.scale * 100) + '%';
+    positionImage();
+    saveState();
+  });
+
+  /* ---------- auto-fit: the digit display must always fit within .stage's fixed, non-scrolling
+     box (see the fixed-viewport-shell CSS comment near the top) — .stage's own overflow:hidden
+     is only the last-resort safety net; this is what keeps that net from ever actually needing
+     to clip anything in normal use.
+
+     Bug fixed — the size slider used to feel broken ("erst passiert lange nichts, dann springt
+     die Anzeige plötzlich viel kleiner, und danach wieder größer"): the OLD design ran a
+     shrink-only correction UNDERNEATH the slider's raw value — the slider itself always spanned
+     the full fixed [MIN_SCALE, MAX_SCALE] range and showed the user's raw preference, while the
+     ACTUAL rendered --scale was separately re-derived from that preference and silently
+     shrunk to fit whenever it didn't. That meant large stretches of the slider's range could
+     render IDENTICALLY (once the raw preference exceeded what fits, every further increase kept
+     getting shrunk back down to roughly the same fitted ceiling — a dead zone), and because the
+     shrink correction re-measures against the CURRENT flex-wrapped layout at each raw value, a
+     small drag right past a flex-wrap threshold could suddenly require an extra row and shrink a
+     lot more than the position just before it did — a visible jump, sometimes in the "wrong"
+     direction relative to the drag.
+
+     The fix makes the auto-fit define ONLY the slider's ceiling, never a second silent
+     correction layered under it: `maxFitScale` is the largest scale that currently fits (computed
+     below, independent of whatever the slider happens to be showing), the slider's own `max`
+     attribute is kept live-synced to it, and the rendered scale is then a plain
+     `Math.min(displayScale, maxFitScale)` — since the browser physically won't let the slider be
+     dragged past its own `max`, that min() is a no-op for every value actually reachable by
+     dragging, so the rendered size tracks the slider position exactly, 1:1, with no dead zone and
+     no reversal. `displayScale` itself still stores the user's raw, un-clamped preference (bounded
+     only by the fixed MIN_SCALE/MAX_SCALE, same as before) — never permanently overwritten with a
+     ceiling-clamped value — so shrinking the window only ever clamps the RENDERED/slider-visible
+     value, and widening it again still springs back to the real stored preference, exactly like
+     the old shrink-only correction did. ---------- */
+  var maxFitScale = MAX_SCALE; /* recomputed below before first real use — see updateScaleCeiling() call sites */
+  /* Finds the single largest scale (up to MAX_SCALE) that fits .stage's available, padding-
+     adjusted box for the ACTIVE tab's current digit/unit content — i.e. the ceiling, computed
+     fresh every time regardless of what the slider currently shows. Uses a small bounded
+     measure-and-shrink loop rather than a single correction, because the digit groups' flex-wrap
+     onto a new row is a step change, not a smooth one: a single correction computed while still
+     wrapped can overshoot once the smaller size lets everything fit back on one row. */
+  var MIN_FIT_SCALE = 0.05; /* absolute floor the search bottoms out at — matches the old shrink loop's floor */
+  /* Bug fixed — this used to be a multiplicative shrink-from-MAX_SCALE loop (mirroring the old
+     fitDigitsScale()'s shrink-from-displayScale one), and it badly OVER-shrank on almost every
+     window size: starting the very first measurement at MAX_SCALE (1.6×) reliably crosses the
+     digit groups' flex-wrap threshold — 4 unit groups at 1.6× essentially never fit on one row, so
+     they stack into a tall multi-row column instead. The one-shot correction `scale *= fit` then
+     extrapolates from THAT wrapped, several-times-taller-than-normal box, landing on a scale far
+     smaller than what actually fits once unwrapped — and because the loop accepted the very first
+     scale where `fit >= 0.999` as "done", it never tried growing back up to see whether a
+     considerably larger, still-unwrapped scale would ALSO fit. (The old fitDigitsScale() mostly
+     dodged this because it started from `displayScale`, which defaults to 1.0 and is rarely large
+     enough to trigger wrapping — but always starting from MAX_SCALE here hit it on nearly every
+     test size, confirmed by tracing the per-iteration measurements.)
+
+     Fixed with a binary search instead of a multiplicative correction: `fitsAt(scale)` is a plain
+     membership test (does the digit box, measured at this exact scale, fit the available space?)
+     with no assumption that size scales linearly with `scale` — flex-wrap's step-change behavior
+     can't fool it, because it never extrapolates from one measurement to guess another, it only
+     ever narrows the [lo, hi] interval based on direct measurements at the midpoint. Converges to
+     the true boundary in a fixed number of steps regardless of how many wrap thresholds sit
+     between MIN_FIT_SCALE and MAX_SCALE. */
+  function computeMaxFitScale(){
+    function fitsAt(scale){
+      digitGroupsEl.style.setProperty('--scale', scale); /* transient — the real final value is set by applyDisplayScale() right after this returns */
+      var stageRect = stageEl.getBoundingClientRect();
+      var areaStyle = getComputedStyle(countdownAreaEl);
+      var availW = Math.max(0, stageRect.width - parseFloat(areaStyle.paddingLeft) - parseFloat(areaStyle.paddingRight));
+      var availH = Math.max(0, stageRect.height - parseFloat(areaStyle.paddingTop) - parseFloat(areaStyle.paddingBottom));
+      var digitsRect = digitGroupsEl.getBoundingClientRect();
+      /* a 0-width/height measurement (some browsers collapse the flex-wrapped box entirely at
+         extremely tight available space instead of overflowing) has no valid box to compare —
+         treated as "doesn't fit" so the search narrows toward smaller scales, same outcome the old
+         loop's explicit degenerate-recovery branch produced. */
+      if (digitsRect.width <= 0 || digitsRect.height <= 0) return false;
+      return digitsRect.width <= availW + 0.5 && digitsRect.height <= availH + 0.5;
+    }
+    if (fitsAt(MAX_SCALE)) return MAX_SCALE; /* common on large windows — skip the search entirely */
+    if (!fitsAt(MIN_FIT_SCALE)) return MIN_FIT_SCALE; /* the residual extreme case: not even the floor fits — nothing more to do, see CLAUDE.md */
+    var lo = MIN_FIT_SCALE, hi = MAX_SCALE; /* invariant: lo fits, hi does not */
+    for (var i = 0; i < 10; i++){
+      var mid = (lo + hi) / 2;
+      if (fitsAt(mid)) lo = mid; else hi = mid;
+    }
+    digitGroupsEl.style.setProperty('--scale', lo); /* leave the transient measurement at a value known to fit */
+    return lo;
+  }
+  /* the single entry point for "the available space or the active tab's content may have
+     changed, recompute the ceiling and re-render against it" — call this (not
+     computeMaxFitScale() directly) from every trigger site: window/sidebar resize, tab switch,
+     unit toggle, font-load settle, and boot. Re-applies the STORED `displayScale` (never the
+     slider's possibly-stale-clamped .value) against the fresh ceiling, which is what lets a
+     preference larger than the current ceiling spring back once more room appears. */
+  function updateScaleCeiling(){
+    maxFitScale = computeMaxFitScale();
+    applyDisplayScale(displayScale);
+  }
+  /* the Google Fonts <link> loads asynchronously; when the unit labels (Tage/Stunden/…) swap
+     from the fallback font to Rajdhani, their text metrics change, which can shift how the unit
+     groups flex-wrap — after the fit above already ran against the pre-swap layout. Re-running
+     once the browser has settled on its fonts catches that case; harmless if it changes nothing. */
+  if (window.document.fonts && document.fonts.ready){
+    document.fonts.ready.then(function(){
+      updateScaleCeiling();
+      positionTitle();
+      positionImage();
+    });
+  }
+
+  /* ---------- display size slider — fine-tunes the digit display within its viewport-auto-fit frame ---------- */
+  var scaleSlider = document.getElementById('scale-slider');
+  var scaleValueEl = document.getElementById('scale-value');
+  function applyDisplayScale(v){
+    displayScale = clampScale(v); /* the raw preference — bounded only by the fixed [MIN_SCALE, MAX_SCALE], never by the current ceiling */
+    var renderScale = Math.min(displayScale, maxFitScale);
+    digitGroupsEl.style.setProperty('--scale', renderScale);
+    /* keep the slider's own draggable range pinned to what currently fits — Math.max guards
+       against maxFitScale ever dipping below the slider's fixed `min`, which would otherwise
+       produce an invalid (max < min) range */
+    scaleSlider.max = String(Math.max(MIN_SCALE, maxFitScale));
+    scaleSlider.value = String(renderScale);
+    scaleValueEl.textContent = Math.round(renderScale * 100) + '%'; /* shows what's actually on screen, not an un-renderable raw preference */
+    positionTitle();
+    positionDigits();
+    positionImage();
+    return renderScale;
+  }
+  scaleSlider.addEventListener('input', function(){
+    applyDisplayScale(parseFloat(scaleSlider.value));
+    saveState();
+  });
+
+  /* ---------- sidebar toggle ---------- */
+  var appEl = document.querySelector('.app');
+  var sidebarEl = document.getElementById('sidebar');
+  var sidebarToggle = document.getElementById('sidebar-toggle');
+  var sidebarCollapsed = false;
+  sidebarToggle.addEventListener('click', function(){
+    sidebarCollapsed = !sidebarCollapsed;
+    appEl.classList.toggle('collapsed', sidebarCollapsed);
+    sidebarToggle.textContent = sidebarCollapsed ? '›' : '‹';
+    sidebarToggle.setAttribute('aria-expanded', String(!sidebarCollapsed));
+    sidebarEl.inert = sidebarCollapsed;
+  });
+
+  /* ---------- lock toggle — freezes EVERYTHING: dragging, text editing/selection, formatting,
+     and every sidebar editing control. Countdowns become pure view-only display (the timers keep
+     ticking); only the lock button itself, the sidebar collapse toggle, and switching between
+     existing tabs (to look at a different countdown) remain usable. ---------- */
+  var lockToggle = document.getElementById('lock-toggle');
+  var lockLabel = document.getElementById('lock-label');
+
+  /* grays out / disables every sidebar editing control (title rename & remove, add, date/units,
+     segment color, glow, title formatting, display size) — called whenever the lock toggles AND
+     whenever the tab list or active tab changes, since those can create fresh controls or change
+     whether a control has an active tab to edit at all. */
+  function applySidebarLockState(){
+    var tab = activeTab();
+    var hasTab = !!tab;
+    var hasImage = !!(tab && tab.image && tab.image.src);
+    addBtn.disabled = locked;
+    segmentColorInput.disabled = locked || !hasTab;
+    glowToggle.disabled = locked || !hasTab;
+    imageUploadBtn.disabled = locked || !hasTab;
+    imageRemoveBtn.disabled = locked || !hasImage;
+    imageScaleSlider.disabled = locked || !hasImage;
+    tfVisible.disabled = locked;
+    tbSize.disabled = locked;
+    tfFont.disabled = locked;
+    tbColor.disabled = locked;
+    tbBold.disabled = locked;
+    tbItalic.disabled = locked;
+    tbAlignBtns.forEach(function(btn){ btn.disabled = locked; });
+    tfGradientEnabled.disabled = locked;
+    tfGradientFrom.disabled = locked;
+    tfGradientTo.disabled = locked;
+    tfGradientDirBtns.forEach(function(btn){ btn.disabled = locked; });
+    scaleSlider.disabled = locked;
+    Array.prototype.slice.call(tabListEl.querySelectorAll('.tab-title-input, .tab-remove')).forEach(function(el){
+      el.disabled = locked;
+    });
+  }
+
+  function applyLockState(v){
+    locked = !!v;
+    appEl.classList.toggle('locked', locked);
+    lockToggle.setAttribute('aria-pressed', String(locked));
+    lockToggle.setAttribute('aria-label', locked ? 'Bearbeitung entsperren' : 'Bearbeitung sperren');
+    lockLabel.textContent = locked ? 'Gesperrt' : 'Entsperrt';
+    titleEl.contentEditable = String(!locked); /* belt-and-suspenders alongside the CSS pointer-events block */
+    applySidebarLockState();
+    syncFormToActiveTab();
+  }
+  lockToggle.addEventListener('click', function(){
+    applyLockState(!locked);
+    saveState();
+  });
+
+  /* ---------- boot ---------- */
+  var restored = loadState();
+  if (restored){
+    tabs = restored.tabs;
+    nextId = tabs.reduce(function(max, t){ return Math.max(max, t.id); }, 0) + 1;
+    var restoredActive = tabs.find(function(t){ return t.id === restored.activeId; }) || tabs[0];
+    activeId = restoredActive.id;
+    targetDate = restoredActive.targetDate;
+    selected = restoredActive.units;
+    applyDisplayScale(restored.displayScale);
+    applySegmentColor(restoredActive);
+    applyGlow(restoredActive);
+    applyImage(restoredActive);
+    applyLockState(restored.locked);
+    rebuildGroups();
+    tick(true); /* rebuildGroups() only builds the empty unit-group containers — the actual digit
+      cells are created lazily by tick()'s ensureCellCount(), same as setActive() already does.
+      Without this, updateScaleCeiling() below would measure an empty shell and under-correct. */
+    renderTabList();
+    syncFormToActiveTab();
+    updateScaleCeiling(); /* applyDisplayScale() above ran before rebuildGroups()/tick() had real content to measure — redo it now that the digits actually exist */
+    positionDigits();
+    syncTitleDisplay();
+  } else {
+    var demoTarget = new Date(Date.now() + 24 * 3600 * 1000);
+    var demoTab = { id: nextId++, titleRuns: [], targetDate: demoTarget, units: new Set(['d','h','m','s']), format: defaultFormat(), segmentColor: DEFAULT_SEG_COLOR, titleVisible: true, glow: false, gradient: defaultGradient(), image: defaultImage(), imagePos: defaultImagePos(), digitsYPct: 0.5 };
+    tabs.push(demoTab);
+    activeId = demoTab.id;
+    targetDate = demoTab.targetDate;
+    selected = demoTab.units;
+    applyDisplayScale(DEFAULT_SCALE);
+    applySegmentColor(demoTab);
+    applyGlow(demoTab);
+    applyImage(demoTab);
+    applyLockState(false);
+    rebuildGroups();
+    tick(true); /* rebuildGroups() only builds the empty unit-group containers — the actual digit
+      cells are created lazily by tick()'s ensureCellCount(), same as setActive() already does.
+      Without this, updateScaleCeiling() below would measure an empty shell and under-correct. */
+    renderTabList();
+    syncFormToActiveTab();
+    updateScaleCeiling(); /* applyDisplayScale() above ran before rebuildGroups()/tick() had real content to measure — redo it now that the digits actually exist */
+    positionDigits();
+    syncTitleDisplay();
+    saveState();
+  }
+
+  setTimeout(function(){ tick(false); }, 220);
+  setInterval(function(){ tick(false); }, 1000);
+})();
+</script>
+
+</body></html>

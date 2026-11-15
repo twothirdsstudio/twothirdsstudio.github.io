@@ -1,0 +1,285 @@
+<!doctype html><html lang="de"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Strommix Deutschland · Two Diamonds Studio</title><meta name="description" content="Interaktive Grafik: Stromerzeugung in Deutschland von 1990 bis 2025."><link rel="canonical" href="https://twodiamondsstudio.com/projekte/strommix/"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<style>
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/barlow-condensed-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/barlow-condensed-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/barlow-condensed-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/barlow-condensed-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/barlow-condensed-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/barlow-condensed-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/ibm-plex-sans-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/ibm-plex-sans-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/ibm-plex-sans-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/ibm-plex-sans-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/ibm-plex-sans-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/ibm-plex-sans-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/ibm-plex-mono-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
+<style>
+/* Layout: Leitstand-Panel – Jahr + Kennzahlen oben, Regler, 100%-Balken als Hauptinstrument, Verlauf + Tabelle darunter */
+:root{
+  --bg:#F3F4F1; --panel:#FFFFFF; --fg:#1D2326; --muted:#5F686C; --line:#D9DDD8; --track:#E4E7E2;
+  --accent:#1F7A5C;
+  --c-solar:#E3AC12; --c-wind:#3A8FB7; --c-wasser:#2457A6; --c-bio:#5E9E3F;
+  --c-kern:#8A5CC2; --c-gas:#D9822B; --c-oel:#A39484; --c-kohle:#4A4038;
+  --f-display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111517; --panel:#1A1F22; --fg:#E6EAE8; --muted:#97A19F; --line:#2C3337; --track:#262D30;
+  --accent:#4FC59A; --c-kohle:#7D7066; --c-oel:#8C8072; --c-wasser:#4A7FD0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111517; --panel:#1A1F22; --fg:#E6EAE8; --muted:#97A19F; --line:#2C3337; --track:#262D30;
+  --accent:#4FC59A; --c-kohle:#7D7066; --c-oel:#8C8072; --c-wasser:#4A7FD0; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.5}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:16px;padding-block:28px 48px;display:grid;gap:20px}
+header{display:grid;gap:4px}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(32px,6vw,48px);line-height:1;margin:0;text-wrap:balance}
+.lede{color:var(--muted);margin:0;max-width:65ch}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px}
+.top{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:end}
+.year{font-family:var(--f-display);font-weight:700;font-size:clamp(64px,13vw,112px);line-height:.85;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.kpi{display:grid;gap:2px;border-left:3px solid var(--k);padding-left:10px}
+.kpi .l{font-size:12px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.kpi .v{font-family:var(--f-display);font-weight:600;font-size:clamp(26px,5vw,38px);line-height:1;font-variant-numeric:tabular-nums}
+.kpi .s{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.controls{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:22px}
+.btn{font:500 14px var(--f-body);color:var(--fg);background:var(--track);border:1px solid var(--line);border-radius:6px;padding:8px 14px;cursor:pointer;min-width:96px}
+.btn:hover{border-color:var(--muted)}
+.btn:focus-visible,input:focus-visible,.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.slider{flex:1 1 320px;display:grid;gap:4px;min-width:0}
+input[type=range]{width:100%;accent-color:var(--accent);height:28px;margin:0}
+.ticks{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.seg button{font:500 13px var(--f-body);background:transparent;color:var(--muted);border:0;padding:8px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--fg);color:var(--panel)}
+.bars{display:grid;gap:14px;margin-top:22px}
+.barlabel{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-bottom:6px;gap:8px;flex-wrap:wrap}
+.bar{position:relative;height:56px;background:var(--track);border-radius:4px;overflow:hidden;display:flex}
+.bar.thin{height:22px}
+.bar > div{height:100%;transition:width .35s ease;position:relative;overflow:hidden;white-space:nowrap}
+.bar > div span{position:absolute;left:8px;top:50%;transform:translateY(-50%);font:600 13px var(--f-body);color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.35)}
+.bar > div span small{display:block;font:400 11px var(--f-mono);opacity:.9}
+.axis{position:relative;height:18px;font-family:var(--f-mono);font-size:11px;color:var(--muted);margin-top:4px}
+.axis i{position:absolute;top:0;white-space:nowrap;transform:translateX(-50%);font-style:normal}
+.axis i:first-child{transform:none}.axis i:last-child{transform:translateX(-100%)}
+.grid2{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:20px}
+h2{font-family:var(--f-display);font-weight:600;font-size:22px;margin:0 0 4px}
+.hint{font-size:13px;color:var(--muted);margin:0 0 12px}
+svg text{fill:var(--muted);font-family:var(--f-mono);font-size:11px}
+#chart{width:100%;height:auto;display:block;cursor:crosshair;touch-action:none}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{padding:7px 4px;text-align:right;border-bottom:1px solid var(--line);font-size:14px}
+th{font-weight:500;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+td:first-child,th:first-child{text-align:left}
+td.num{font-family:var(--f-mono);font-size:13px}
+.sw{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:8px;vertical-align:-1px}
+tr.grp td{font-weight:600;border-bottom:1px solid var(--muted);padding-top:12px}
+.up,.down{color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;margin-top:10px}
+footer{font-size:12px;color:var(--muted);max-width:75ch}
+footer a{color:inherit}
+@media (max-width:760px){
+  .top{grid-template-columns:1fr;gap:14px}
+  .grid2{grid-template-columns:1fr}
+  .kpis{gap:8px}
+  .bar{height:48px}
+}
+@media (prefers-reduced-motion:reduce){.bar > div{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Stromerzeugung · Deutschland · 1990–2025</div>
+    <h1>Strommix Deutschland</h1>
+    <p class="lede">Zieh den Regler oder drück auf Abspielen und sieh zu, wie Wind und Sonne Kohle und Atomkraft verdrängen.</p>
+  </header>
+
+  <section class="panel">
+    <div class="top">
+      <div class="year" id="year">2025</div>
+      <div class="kpis">
+        <div class="kpi" style="--k:var(--c-wind)"><span class="l">Erneuerbar</span><span class="v" id="k-ee">–</span><span class="s" id="k-ee2">–</span></div>
+        <div class="kpi" style="--k:var(--c-kern)"><span class="l">Kernenergie</span><span class="v" id="k-kern">–</span><span class="s" id="k-kern2">–</span></div>
+        <div class="kpi" style="--k:var(--c-kohle)"><span class="l">Fossil</span><span class="v" id="k-fos">–</span><span class="s" id="k-fos2">–</span></div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="btn" id="play" type="button">▶ Abspielen</button>
+      <div class="slider">
+        <input type="range" id="range" min="1990" max="2025" step="1" value="2025" aria-label="Jahr">
+        <div class="ticks"><span>1990</span><span>2000</span><span>2010</span><span>2020</span><span>2025</span></div>
+      </div>
+      <div class="seg" role="group" aria-label="Einheit">
+        <button type="button" id="m-pct" aria-pressed="true">Anteil %</button>
+        <button type="button" id="m-twh" aria-pressed="false">TWh</button>
+      </div>
+    </div>
+
+    <div class="bars">
+      <div>
+        <div class="barlabel"><span>Erneuerbar · Kernenergie · Fossil</span><span id="total">–</span></div>
+        <div class="bar thin" id="bar-grp"></div>
+      </div>
+      <div>
+        <div class="barlabel"><span>Nach Energieträger</span></div>
+        <div class="bar" id="bar-src"></div>
+        <div class="axis" id="axis"></div>
+        <div class="legend" id="legend"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="grid2">
+    <section class="panel">
+      <h2>Verlauf 1990–2025</h2>
+      <p class="hint">Klick oder zieh im Diagramm, um ein Jahr zu wählen.</p>
+      <svg id="chart" viewBox="0 0 560 300" role="img" aria-label="Gestapeltes Flächendiagramm des Strommix 1990 bis 2025"></svg>
+    </section>
+    <section class="panel">
+      <h2 id="tbl-title">Details 2025</h2>
+      <p class="hint">Veränderung gegenüber 1990 in TWh.</p>
+      <table>
+        <thead><tr><th>Quelle</th><th>TWh</th><th>Anteil</th><th>vs. 1990</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </section>
+  </div>
+
+  <footer>
+    Daten: Our World in Data, Energy Dataset (Basis: Ember / Energy Institute), Stromerzeugung in TWh. „Kohle“ umfasst Braun- und Steinkohle; „Öl &amp; Sonstige“ enthält auch nicht erneuerbaren Müll und weitere fossile Gase. „Biomasse“ inkl. Biogas, biogenem Abfall und Geothermie. 2025 ist vorläufig. Werte können leicht von AGEB-Zahlen (Bruttostromerzeugung) abweichen.
+  </footer>
+</div>
+
+<script>
+const RAW={"1990":[310.0,35.9,24.8,152.5,0.1,0.0,17.4,1.6,0.0],"1991":[307.7,36.3,27.8,147.2,0.2,0.0,14.9,1.9,0.0],"1992":[295.7,33.0,26.6,158.8,0.3,0.0,17.4,2.0,0.0],"1993":[293.2,32.8,20.9,153.3,0.7,0.0,17.9,2.0,0.0],"1994":[290.3,36.1,20.5,150.7,1.4,0.0,19.9,2.1,0.0],"1995":[289.1,41.1,21.5,153.1,1.7,0.0,21.8,2.4,0.0],"1996":[296.0,45.6,20.1,160.0,2.1,0.0,22.0,2.5,0.0],"1997":[284.3,48.1,20.6,170.3,3.0,0.0,17.4,2.6,0.0],"1998":[292.3,50.7,19.7,161.6,4.6,0.0,17.2,3.1,0.0],"1999":[281.3,51.8,17.5,170.0,5.5,0.0,19.6,3.5,0.0],"2000":[296.7,49.2,18.1,169.6,9.3,0.0,21.7,4.3,0.0],"2001":[293.7,55.5,20.5,171.3,10.5,0.1,22.7,4.6,0.0],"2002":[299.6,56.3,18.5,164.8,15.9,0.2,23.1,5.3,0.0],"2003":[304.6,62.6,23.1,165.1,19.1,0.3,18.3,8.9,0.0],"2004":[298.8,62.7,23.1,167.1,26.0,0.6,20.8,10.6,0.0],"2005":[288.1,72.2,26.5,163.1,27.8,1.3,19.6,14.7,0.0],"2006":[288.9,74.7,26.7,167.3,31.3,2.3,20.0,18.9,0.0],"2007":[297.1,77.5,26.6,140.5,40.5,3.1,21.2,24.6,0.0],"2008":[275.2,88.5,25.7,148.5,41.4,4.5,20.4,28.0,0.0],"2009":[253.4,80.3,23.2,134.9,39.4,6.7,19.0,30.9,0.0],"2010":[262.9,88.8,26.6,140.6,38.5,12.0,20.9,33.9,0.0],"2011":[262.5,85.7,24.5,108.0,49.9,20.0,17.7,36.9,0.0],"2012":[276.2,76.0,24.8,99.5,51.7,26.7,21.8,43.2,0.0],"2013":[288.2,67.0,25.2,97.3,52.7,30.6,23.0,45.5,0.1],"2014":[274.4,60.6,24.7,97.1,58.5,35.5,19.6,48.3,0.1],"2015":[272.2,61.5,25.6,91.8,80.6,38.1,19.0,50.3,0.1],"2016":[261.8,80.6,25.4,84.6,79.9,37.6,20.6,50.9,0.2],"2017":[241.3,86.0,25.2,76.3,105.7,38.8,20.1,50.9,0.2],"2018":[228.2,81.6,23.6,76.0,110.0,44.3,17.7,50.8,0.2],"2019":[171.4,90.0,22.4,75.1,125.9,45.2,19.7,50.1,0.2],"2020":[134.6,95.0,21.3,64.4,132.1,49.5,18.7,50.9,0.2],"2021":[164.7,90.3,22.2,69.1,114.2,49.3,19.7,49.1,0.2],"2022":[179.9,79.0,21.6,34.7,124.8,60.3,17.6,48.6,0.2],"2023":[124.8,76.7,21.0,7.2,140.5,63.9,21.2,51.3,0.2],"2024":[106.3,78.4,20.4,0.0,141.6,74.1,23.8,51.1,0.2],"2025":[103.2,82.7,18.9,0.0,136.0,89.6,19.6,50.5,0.0]};
+// raw order: coal, gas, oil, nuclear, wind, solar, hydro, bio, other-renew
+const SRC=[
+  {k:'solar', n:'Sonne',          g:'ee',  f:r=>r[5]},
+  {k:'wind',  n:'Wind',           g:'ee',  f:r=>r[4]},
+  {k:'wasser',n:'Wasser',         g:'ee',  f:r=>r[6]},
+  {k:'bio',   n:'Biomasse',       g:'ee',  f:r=>r[7]+r[8]},
+  {k:'kern',  n:'Kernenergie',    g:'kern',f:r=>r[3]},
+  {k:'gas',   n:'Erdgas',         g:'fos', f:r=>r[1]},
+  {k:'oel',   n:'Öl & Sonstige',  g:'fos', f:r=>r[2]},
+  {k:'kohle', n:'Kohle',          g:'fos', f:r=>r[0]},
+];
+const _lg=()=>{};
+const GRP={ee:{n:'Erneuerbar',c:'wind'},kern:{n:'Kernenergie',c:'kern'},fos:{n:'Fossil',c:'kohle'}};
+const YEARS=Object.keys(RAW).map(Number).sort((a,b)=>a-b);
+const DATA={};
+YEARS.forEach(y=>{const r=RAW[y];const v=SRC.map(s=>s.f(r));const t=v.reduce((a,b)=>a+b,0);
+  const g={ee:0,kern:0,fos:0};SRC.forEach((s,i)=>g[s.g]+=v[i]);DATA[y]={v,t,g};});
+const MAXT=Math.max(...YEARS.map(y=>DATA[y].t));
+const XMAX=Math.ceil(MAXT/100)*100; // TWh axis
+const col=k=>`var(--c-${k})`;
+const fmt=(x,d=1)=>x.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+let year=2025, mode='pct', timer=null;
+try{const m=localStorage.getItem('sm-mode');if(m==='twh'||m==='pct')mode=m;}catch(e){}
+
+const $=id=>document.getElementById(id);
+const barSrc=$('bar-src'), barGrp=$('bar-grp');
+SRC.forEach(s=>{const d=document.createElement('div');d.style.background=col(s.k);d.title=s.n;d.innerHTML='<span></span>';barSrc.appendChild(d);});
+['ee','kern','fos'].forEach(g=>{const d=document.createElement('div');d.style.background=col(GRP[g].c);d.innerHTML='<span style="font-size:11px"></span>';barGrp.appendChild(d);});
+
+document.getElementById('legend').innerHTML=SRC.map(s=>`<span><span class="sw" style="background:${col(s.k)}"></span>${s.n}</span>`).join('');
+function axis(){
+  const ax=$('axis');ax.innerHTML='';
+  const ticks=mode==='pct'?[0,25,50,75,100]:Array.from({length:XMAX/100+1},(_,i)=>i*100);
+  const max=mode==='pct'?100:XMAX;
+  ticks.forEach(t=>{const i=document.createElement('i');i.style.left=(t/max*100)+'%';i.textContent=mode==='pct'?t+' %':t+(t===max?' TWh':'');ax.appendChild(i);});
+}
+
+function render(){
+  const d=DATA[year], d0=DATA[1990];
+  $('year').textContent=year; $('range').value=year;
+  $('tbl-title').textContent='Details '+year+(year===2025?' (vorläufig)':'');
+  const pct=x=>x/d.t*100;
+  $('k-ee').textContent=fmt(pct(d.g.ee))+' %'; $('k-ee2').textContent=fmt(d.g.ee,0)+' TWh';
+  $('k-kern').textContent=fmt(pct(d.g.kern))+' %'; $('k-kern2').textContent=fmt(d.g.kern,0)+' TWh';
+  $('k-fos').textContent=fmt(pct(d.g.fos))+' %'; $('k-fos2').textContent=fmt(d.g.fos,0)+' TWh';
+  $('total').textContent='Gesamt '+fmt(d.t,0)+' TWh';
+  const scale=x=>mode==='pct'?pct(x):x/XMAX*100;
+  [...barSrc.children].forEach((el,i)=>{const v=d.v[i],w=scale(v);el.style.width=w+'%';
+    const sp=el.firstChild;
+    sp.innerHTML= w>7 ? `${SRC[i].n}<small>${mode==='pct'?fmt(pct(v))+' %':fmt(v,0)+' TWh'}</small>` : '';
+    el.title=`${SRC[i].n}: ${fmt(v)} TWh (${fmt(pct(v))} %)`;});
+  ['ee','kern','fos'].forEach((g,i)=>{const el=barGrp.children[i],w=scale(d.g[g]);el.style.width=w+'%';
+    el.firstChild.textContent= w>9 ? GRP[g].n+' '+fmt(pct(d.g[g]),0)+' %' : '';
+    el.title=`${GRP[g].n}: ${fmt(pct(d.g[g]))} %`;});
+  // table
+  let h='';
+  ['ee','kern','fos'].forEach(g=>{
+    const dg=d.g[g]-d0.g[g];
+    h+=`<tr class="grp"><td>${GRP[g].n}</td><td class="num">${fmt(d.g[g])}</td><td class="num">${fmt(pct(d.g[g]))} %</td><td class="num ${dg>=0?'up':'down'}">${dg>=0?'+':'−'}${fmt(Math.abs(dg),0)}</td></tr>`;
+    SRC.forEach((s,i)=>{if(s.g!==g||g==='kern')return;const dv=d.v[i]-d0.v[i];
+      h+=`<tr><td><span class="sw" style="background:${col(s.k)}"></span>${s.n}</td><td class="num">${fmt(d.v[i])}</td><td class="num">${fmt(pct(d.v[i]))} %</td><td class="num ${dv>=0?'up':'down'}">${dv>=0?'+':'−'}${fmt(Math.abs(dv),0)}</td></tr>`;});
+  });
+  $('tbody').innerHTML=h;
+  drawCursor();
+}
+
+// stacked area chart
+const svg=$('chart'),NS='http://www.w3.org/2000/svg';
+const W=560,H=300,P={l:40,r:10,t:10,b:26};
+const xs=y=>P.l+(y-1990)/(2025-1990)*(W-P.l-P.r);
+const ys=v=>H-P.b-v*(H-P.t-P.b);
+let cursor;
+function el(n,a){const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);return e;}
+function drawChart(){
+  svg.innerHTML='';
+  const max=mode==='pct'?1:XMAX;
+  const yt=mode==='pct'?[0,.25,.5,.75,1]:Array.from({length:XMAX/100+1},(_,i)=>i*100);
+  yt.forEach(t=>{const y=ys(t/max);svg.appendChild(el('line',{x1:P.l,x2:W-P.r,y1:y,y2:y,stroke:'var(--line)','stroke-width':1}));
+    const tx=el('text',{x:P.l-6,y:y+4,'text-anchor':'end'});tx.textContent=mode==='pct'?Math.round(t*100)+'%':t;svg.appendChild(tx);});
+  [1990,2000,2010,2020,2025].forEach(y=>{const tx=el('text',{x:xs(y),y:H-8,'text-anchor':y===1990?'start':y===2025?'end':'middle'});tx.textContent=y;svg.appendChild(tx);});
+  const base=YEARS.map(()=>0);
+  SRC.forEach((s,i)=>{
+    const top=YEARS.map((y,j)=>base[j]+(mode==='pct'?DATA[y].v[i]/DATA[y].t:DATA[y].v[i]/XMAX));
+    let p='M'+YEARS.map((y,j)=>xs(y)+','+ys(top[j])).join('L');
+    p+='L'+YEARS.slice().reverse().map((y,j)=>xs(y)+','+ys(base[YEARS.length-1-j])).join('L')+'Z';
+    svg.appendChild(el('path',{d:p,fill:col(s.k),stroke:'var(--panel)','stroke-width':.5}));
+    YEARS.forEach((_,j)=>base[j]=top[j]);
+  });
+  cursor=el('g',{});
+  cursor.appendChild(el('line',{y1:P.t,y2:H-P.b,stroke:'var(--fg)','stroke-width':1.5}));
+  cursor.appendChild(el('rect',{y:P.t-2,width:36,height:16,rx:3,fill:'var(--fg)'}));
+  const lab=el('text',{y:P.t+10,'text-anchor':'middle',style:'fill:var(--panel);font-weight:500'});cursor.appendChild(lab);
+  svg.appendChild(cursor);drawCursor();
+}
+function drawCursor(){if(!cursor)return;const x=xs(year);const [ln,rc,tx]=cursor.children;
+  ln.setAttribute('x1',x);ln.setAttribute('x2',x);
+  const bx=Math.min(Math.max(x-18,P.l),W-P.r-36);rc.setAttribute('x',bx);tx.setAttribute('x',bx+18);tx.textContent=year;}
+function pick(ev){const r=svg.getBoundingClientRect();const x=(ev.clientX-r.left)/r.width*W;
+  let y=Math.round(1990+(x-P.l)/(W-P.l-P.r)*35);y=Math.max(1990,Math.min(2025,y));if(y!==year){year=y;render();}}
+let drag=false;
+svg.addEventListener('pointerdown',e=>{drag=true;stop();svg.setPointerCapture(e.pointerId);pick(e);});
+svg.addEventListener('pointermove',e=>{if(drag)pick(e);});
+svg.addEventListener('pointerup',()=>drag=false);
+
+// controls
+$('range').addEventListener('input',e=>{stop();year=+e.target.value;render();});
+function stop(){if(timer){clearInterval(timer);timer=null;$('play').textContent='▶ Abspielen';}}
+$('play').addEventListener('click',()=>{
+  if(timer){stop();return;}
+  if(year>=2025)year=1990;
+  $('play').textContent='❚❚ Pause';render();
+  timer=setInterval(()=>{if(year>=2025){stop();return;}year++;render();},550);
+});
+function setMode(m){mode=m;$('m-pct').setAttribute('aria-pressed',m==='pct');$('m-twh').setAttribute('aria-pressed',m==='twh');
+  try{localStorage.setItem('sm-mode',m);}catch(e){} axis();drawChart();render();}
+$('m-pct').addEventListener('click',()=>setMode('pct'));
+$('m-twh').addEventListener('click',()=>setMode('twh'));
+document.addEventListener('keydown',e=>{if(e.target.tagName==='INPUT')return;
+  if(e.key==='ArrowRight'&&year<2025){stop();year++;render();}
+  if(e.key==='ArrowLeft'&&year>1990){stop();year--;render();}});
+setMode(mode);
+</script>
+
+</body></html>
